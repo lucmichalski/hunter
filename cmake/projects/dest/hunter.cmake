@@ -12,11 +12,11 @@ hunter_add_version(
     PACKAGE_NAME
     dest
     VERSION
-    "0.8.0-p1"
+    "0.8.0-p2"
     URL
-    "https://github.com/headupinclouds/dest/archive/v0.8.0-p1.tar.gz"
+    "https://github.com/headupinclouds/dest/archive/v0.8.0-p2.tar.gz"
     SHA1
-    f79d242f32d42f6b1c6b4162c76e6fa68456547c
+    6e127ba2874248b1cff640453a5289d3388ad657
     )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
