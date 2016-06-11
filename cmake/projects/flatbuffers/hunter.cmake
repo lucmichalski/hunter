@@ -12,11 +12,11 @@ hunter_add_version(
     PACKAGE_NAME
     flatbuffers
     VERSION
-    "1.3.0-p0"
+    "1.3.0-p1"
     URL
-    "https://github.com/headupinclouds/flatbuffers/archive/v1.3.0-p0.tar.gz"
+    "https://github.com/headupinclouds/flatbuffers/archive/v1.3.0-p1.tar.gz"
     SHA1
-    ab6107981a4f8b670f03a8d85b8680b3a8a980d9
+    d07f6d3d64f7571c4655e2a37e6b0d8b1339521a
     )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
