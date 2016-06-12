@@ -1,0 +1,286 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform]> "cmake" "--version"
+cmake version 3.5.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode`
+  `-GXcode`
+  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake`
+  `-DCMAKE_VERBOSE_MAKEFILE=ON`
+  `-DPOLLY_STATUS_DEBUG=ON`
+  `-DHUNTER_STATUS_DEBUG=ON`
+  `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10`
+  `-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10" "-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10"
+Including HunterGate: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/gate/cmake/HunterGate.cmake
+-- [hunter *** DEBUG *** 2016-06-12T18:40:27] HUNTER_ROOT detected by cmake variable
+-- [hunter *** DEBUG *** 2016-06-12T18:40:27] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T18:40:27] Settings (initialize):
+-- [hunter *** DEBUG *** 2016-06-12T18:40:27]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T18:40:27]   Cache init (NO)
+-- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [polly *** DEBUG ***] Used tag: xcode
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX is empty
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX set to 'd'
+-- [polly *** DEBUG ***] Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+CMake Warning at /usr/local/Cellar/cmake/3.5.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake:97 (message):
+  CMAKE_OSX_DEPLOYMENT_TARGET is '10.10' but the matching SDK does not exist
+  at:
+
+   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk"
+
+  Instead using SDK:
+
+   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk".
+Call Stack (most recent call first):
+  /usr/local/Cellar/cmake/3.5.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake:18 (include)
+  CMakeLists.txt:10 (project)
+
+
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37] List of cache servers:
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37]   * https://github.com/ingenue/hunter-cache
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37] Settings (finalize):
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37]   Cache init (NO)
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37] Variables from HunterGate:
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37]   HUNTER_GATE_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37]   HUNTER_GATE_VERSION: xxxxxxxxxx
+-- [hunter *** DEBUG *** 2016-06-12T18:40:37]   HUNTER_GATE_SHA1: xxxxxxxxxx
+-- [hunter] Calculating Config-SHA1
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] Config: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/config.cmake
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] Config sha1: b29b2d73b12d4bc23fdf93074213438938b78c88
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter *** DEBUG *** 2016-06-12T18:40:38] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/_3rdParty/hunter/toolchain] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/_3rdParty/hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DHUNTER_SELF=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter" "-GXcode" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/_3rdParty/hunter/toolchain" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/_3rdParty/hunter/toolchain/_builds" "-DCMAKE_RELEASE_POSTFIX="
+-- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/_3rdParty/hunter/toolchain/_builds
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Toolchain info: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/toolchain.info
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Toolchain SHA1: b30b22e4bf312269e752f3aa6c4b68581b82e6ef
+-- [hunter] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] HUNTER_TOOLCHAIN_ID_PATH: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] HUNTER_CONFIGURATION_TYPES: Release
+-- [hunter] [ Hunter-ID: xxxxxxx | Config-ID: b29b2d7 | Toolchain-ID: b30b22e ]
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_SIZEOF_DATA_PTR = 8
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_COMPILER_ABI =
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_IMPLICIT_LINK_LIBRARIES = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.3.0/lib/darwin/libclang_rt.osx.a
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_IMPLICIT_LINK_DIRECTORIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_LIBRARY_ARCHITECTURE =
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_C_ABI_COMPILED = TRUE
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_SIZEOF_DATA_PTR = 8
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_COMPILER_ABI =
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_IMPLICIT_LINK_LIBRARIES = c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.3.0/lib/darwin/libclang_rt.osx.a
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_LIBRARY_ARCHITECTURE =
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] ABI forwarding: CMAKE_CXX_ABI_COMPILED = TRUE
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/Android-SDK-Platform/hunter.cmake
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Skip '22_r02' (looking for '21_r02')
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Skip '21_r01' (looking for '21_r02')
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Skip '19_r04' (looking for '21_r02')
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Skip '16_r05' (looking for '21_r02')
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Android-SDK-Platform versions available: [22_r02;21_r02;21_r01;19_r04;16_r05]
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Unpack to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Source
+-- [hunter] ANDROID-SDK-PLATFORM_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Source (ver.: 21_r02)
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Default arguments:
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] User arguments:
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Already locked: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Non-install saved: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/cache.sha1 (53536556059bb29ae82f414fd2e14bc335a4eb4c)
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Number of logical cores: 4
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] HUNTER_JOBS_NUMBER:
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] HUNTER_JOBS_OPTION: 4
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Add package: Android-SDK-Platform
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Download scheme: url_sha1_unpack
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Url: http://dl-ssl.google.com/android/repository/android-21_r02.zip
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] SHA1: 53536556059bb29ae82f414fd2e14bc335a4eb4c
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] Scheme file used: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/schemes/url_sha1_unpack.cmake.in
+-- [hunter] Building Android-SDK-Platform
+-- [hunter *** DEBUG *** 2016-06-12T18:40:50] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/cache.cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/args.cmake" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/toolchain.cmake" "-GXcode"
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/cache.cmake
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/args.cmake
+-- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2016-06-12T18:40:59] Scheme: url_sha1_unpack
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build
+-- [hunter *** DEBUG *** 2016-06-12T18:40:59] Configure step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform)
+-- [hunter *** DEBUG *** 2016-06-12T18:40:59] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build"
+2016-06-12 18:41:00.064 xcodebuild[80277:523859] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:00.066 xcodebuild[80277:523859] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:00.067 xcodebuild[80277:523859] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:00.068 xcodebuild[80277:523859] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:00.068 xcodebuild[80277:523859] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Project WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/ZERO_CHECK.build/Script-A30E785C97524DDBA04184A6.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/ZERO_CHECK.build/Script-A30E785C97524DDBA04184A6.sh
+
+PhaseScriptExecution CMake\ Rules Build/Project.build/Debug/ZERO_CHECK.build/Script-A30E785C97524DDBA04184A6.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/ZERO_CHECK.build/Script-A30E785C97524DDBA04184A6.sh
+echo ""
+
+make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/CMakeScripts/ReRunCMake.make
+make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET Android-SDK-Platform OF PROJECT Project WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/Android-SDK-Platform.build/Script-4A741B399BF945DCBF5748A1.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/Android-SDK-Platform.build/Script-4A741B399BF945DCBF5748A1.sh
+
+PhaseScriptExecution CMake\ Rules Build/Project.build/Debug/Android-SDK-Platform.build/Script-4A741B399BF945DCBF5748A1.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/Android-SDK-Platform.build/Script-4A741B399BF945DCBF5748A1.sh
+echo "Creating directories for 'Android-SDK-Platform'"
+Creating directories for 'Android-SDK-Platform'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Source
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Source
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/tmp
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-mkdir
+echo "Performing download step (download, verify and extract) for 'Android-SDK-Platform'"
+Performing download step (download, verify and extract) for 'Android-SDK-Platform'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/download-Android-SDK-Platform.cmake
+-- downloading...
+     src='http://dl-ssl.google.com/android/repository/android-21_r02.zip'
+     dst='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655/android-21_r02.zip'
+     timeout='none'
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 25% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
