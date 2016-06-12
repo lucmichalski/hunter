@@ -22,6 +22,17 @@
 include(hunter_config)
 include(hunter_user_error)
 
+# Done (Forked+Pre-Release)
+hunter_config(LibMill VERSION 1.12-m0)
+hunter_config(NanoMsg VERSION 1.0.0)
+hunter_config(Thrift VERSION 0.9.3-m0)
+hunter_config(GPUImage VERSION 0.1.7-m7)
+
+# To do
+hunter_config(Thrift-Asio VERSION 0.9.3-m0)
+hunter_config(Thrift-Facebook VERSION 0.1-p0)
+hunter_config(DillSocks VERSION 0.1-p0)
+
 # NOTE: no names with spaces!
 
 hunter_config(AllTheFlopsThreads VERSION 0.1-p0)
