@@ -12,9 +12,9 @@ hunter_add_version(
     PACKAGE_NAME
     Thrift-Facebook
     VERSION
-    "0.9.3-m0"
+    "0.31.0-m0"
     URL
-    "https://github.com/lucmichalski/thrift/archive/0.9.3-m0.tar.gz"
+    "https://github.com/lucmichalski/fbthrift/archive/v0.31.0-m0.tar.gz"
     SHA1
     463564d96442c214d21faa28a3ca229962ca086c
     )

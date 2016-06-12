@@ -8,6 +8,8 @@ include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
 
+hunter_add_package(ZLIB)
+
 hunter_add_version(
     PACKAGE_NAME
     Thrift
@@ -16,7 +18,7 @@ hunter_add_version(
     URL
     "https://github.com/lucmichalski/thrift/archive/0.9.3-m0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    773c348b6ed83c8c73ad2fef51a23cbe09d7c43a
     )
 
 hunter_cmake_args(
@@ -36,4 +38,7 @@ hunter_cmake_args(
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Thrift)
-hunter_download(PACKAGE_NAME Thrift)
+hunter_download(
+    PACKAGE_NAME Thrift
+    PACKAGE_DEPENDS_ON Boost ZLIB LibEvent
+)
