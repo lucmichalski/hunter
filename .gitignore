@@ -1,5 +1,7 @@
 _logs
 
+log.txt
+
 # CMake
 CMakeCache.txt
 CMakeFiles
