@@ -2,11 +2,12 @@
 
 # Luc Michalski - 2016
 
-EXAMPLE_ARCH="xcode"
+EXAMPLE_ARCH="ios"
 
 #
 # Lists of architectures
 # ios-9-3
+# ios-9-3 (armv7,arm64,sim-x86_64,sim-i386)
 # libcxx
 # xcide
 # android

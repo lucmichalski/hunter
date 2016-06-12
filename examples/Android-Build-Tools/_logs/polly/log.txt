@@ -15,56 +15,62 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 Execute command: [
   `cmake`
   `-H.`
-  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode`
+  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3`
   `-GXcode`
-  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake`
+  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/ios-9-3.cmake`
   `-DCMAKE_VERBOSE_MAKEFILE=ON`
   `-DPOLLY_STATUS_DEBUG=ON`
   `-DHUNTER_STATUS_DEBUG=ON`
+  `-DCMAKE_INSTALL_PREFIX=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_install/ios-9-3`
   `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DUSE_OGLES_GPGPU=ON`
   `-DHUNTER_CONFIGURATION_TYPES=Release`
-  `-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10`
-  `-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10`
+  `-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0`
+  `-DCMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH=NO`
+  `-DCMAKE_XCODE_ATTRIBUTE_VALID_ARCHS=armv7,arm64`
+  `-DCMAKE_XCODE_TARGETED_DEVICE_FAMILY=1,2`
+  `-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0`
 ]
-[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10" "-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10"
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/ios-9-3.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DCMAKE_INSTALL_PREFIX=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_install/ios-9-3" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DUSE_OGLES_GPGPU=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0" "-DCMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH=NO" "-DCMAKE_XCODE_ATTRIBUTE_VALID_ARCHS=armv7,arm64" "-DCMAKE_XCODE_TARGETED_DEVICE_FAMILY=1,2" "-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0"
 Including HunterGate: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/gate/cmake/HunterGate.cmake
--- [hunter *** DEBUG *** 2016-06-12T18:39:59] HUNTER_ROOT detected by cmake variable
--- [hunter *** DEBUG *** 2016-06-12T18:39:59] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
--- [hunter *** DEBUG *** 2016-06-12T18:39:59] Settings (initialize):
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   HunterGate done (NO)
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   Cache init (NO)
--- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
--- [polly *** DEBUG ***] Used tag: xcode
+-- [hunter *** DEBUG *** 2016-06-12T19:05:19] HUNTER_ROOT detected by cmake variable
+-- [hunter *** DEBUG *** 2016-06-12T19:05:19] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T19:05:19] Settings (initialize):
+-- [hunter *** DEBUG *** 2016-06-12T19:05:19]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T19:05:19]   Cache init (NO)
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
+-- [polly *** DEBUG ***] Used tag: ios-9-3
 -- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX is empty
 -- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX set to 'd'
 -- [polly *** DEBUG ***] Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
-CMake Warning at /usr/local/Cellar/cmake/3.5.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake:97 (message):
-  CMAKE_OSX_DEPLOYMENT_TARGET is '10.10' but the matching SDK does not exist
-  at:
-
-   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk"
-
-  Instead using SDK:
-
-   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk".
-Call Stack (most recent call first):
-  /usr/local/Cellar/cmake/3.5.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake:18 (include)
-  CMakeLists.txt:10 (project)
-
-
--- [hunter *** DEBUG *** 2016-06-12T18:39:59] List of cache servers:
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   * https://github.com/ingenue/hunter-cache
--- [hunter *** DEBUG *** 2016-06-12T18:39:59] Settings (finalize):
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   HunterGate done (NO)
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   Cache init (NO)
--- [hunter *** DEBUG *** 2016-06-12T18:39:59] Variables from HunterGate:
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   HUNTER_GATE_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   HUNTER_GATE_VERSION: xxxxxxxxxx
--- [hunter *** DEBUG *** 2016-06-12T18:39:59]   HUNTER_GATE_SHA1: xxxxxxxxxx
+-- [polly *** DEBUG ***] Developer root: /Applications/Xcode.app/Contents/Developer
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08] List of cache servers:
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08]   * https://github.com/ingenue/hunter-cache
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08] Settings (finalize):
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08]   Cache init (NO)
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08] Variables from HunterGate:
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08]   HUNTER_GATE_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08]   HUNTER_GATE_VERSION: xxxxxxxxxx
+-- [hunter *** DEBUG *** 2016-06-12T19:06:08]   HUNTER_GATE_SHA1: xxxxxxxxxx
 -- [hunter] Calculating Config-SHA1
 -- [hunter] Calculating Toolchain-SHA1
--- [hunter *** DEBUG *** 2016-06-12T18:40:00] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/_3rdParty/hunter/toolchain] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/_3rdParty/hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DHUNTER_SELF=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter" "-GXcode" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/_3rdParty/hunter/toolchain" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/_3rdParty/hunter/toolchain/_builds" "-DCMAKE_RELEASE_POSTFIX="
--- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [hunter *** DEBUG *** 2016-06-12T19:06:09] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3/_3rdParty/hunter/toolchain] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3/_3rdParty/hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/ios-9-3.cmake" "-DHUNTER_SELF=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter" "-GXcode" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3/_3rdParty/hunter/toolchain" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3/_3rdParty/hunter/toolchain/_builds" "-DCMAKE_RELEASE_POSTFIX="
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
 -- The C compiler identification is AppleClang 7.3.0.7030029
 -- The CXX compiler identification is AppleClang 7.3.0.7030029
 -- Check for working C compiler using: Xcode
@@ -81,39 +87,39 @@ Call Stack (most recent call first):
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/_3rdParty/hunter/toolchain/_builds
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Already exists: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/toolchain.info
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/ios-9-3/_3rdParty/hunter/toolchain/_builds
+-- [hunter *** DEBUG *** 2016-06-12T19:07:07] Already exists: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/toolchain.info
 -- [hunter] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] HUNTER_TOOLCHAIN_ID_PATH: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] HUNTER_CONFIGURATION_TYPES: Release
--- [hunter] [ Hunter-ID: xxxxxxx | Config-ID: 1a7b326 | Toolchain-ID: b30b22e ]
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/Android-Build-Tools/hunter.cmake
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Skip '18.1' (looking for '22.0.1')
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Skip '18.0.1' (looking for '22.0.1')
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Android-Build-Tools versions available: [22.0.1;18.1;18.0.1]
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Unpack to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Source
--- [hunter] ANDROID-BUILD-TOOLS_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Source (ver.: 22.0.1)
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Default arguments:
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] User arguments:
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Lock done
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Already locked: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Lock done
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Non-install saved: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/cache.sha1 (53dad7f608e01d53b17176ba11165acbfccc5bbf)
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Number of logical cores: 4
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] HUNTER_JOBS_NUMBER:
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] HUNTER_JOBS_OPTION: 4
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Add package: Android-Build-Tools
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Download scheme: url_sha1_unpack
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Url: https://dl-ssl.google.com/android/repository/build-tools_r22.0.1-macosx.zip
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] SHA1: 53dad7f608e01d53b17176ba11165acbfccc5bbf
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] Scheme file used: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/schemes/url_sha1_unpack.cmake.in
+-- [hunter *** DEBUG *** 2016-06-12T19:07:07] HUNTER_TOOLCHAIN_ID_PATH: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161
+-- [hunter *** DEBUG *** 2016-06-12T19:07:07] HUNTER_CONFIGURATION_TYPES: Release
+-- [hunter] [ Hunter-ID: xxxxxxx | Config-ID: 1a7b326 | Toolchain-ID: a7d4161 ]
+-- [hunter *** DEBUG *** 2016-06-12T19:07:07] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/Android-Build-Tools/hunter.cmake
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Skip '18.1' (looking for '22.0.1')
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Skip '18.0.1' (looking for '22.0.1')
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Android-Build-Tools versions available: [22.0.1;18.1;18.0.1]
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Unpack to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Source
+-- [hunter] ANDROID-BUILD-TOOLS_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Source (ver.: 22.0.1)
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Default arguments:
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] User arguments:
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Already locked: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Non-install saved: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/cache.sha1 (53dad7f608e01d53b17176ba11165acbfccc5bbf)
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Number of logical cores: 4
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] HUNTER_JOBS_NUMBER:
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] HUNTER_JOBS_OPTION: 4
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Add package: Android-Build-Tools
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Download scheme: url_sha1_unpack
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Url: https://dl-ssl.google.com/android/repository/build-tools_r22.0.1-macosx.zip
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] SHA1: 53dad7f608e01d53b17176ba11165acbfccc5bbf
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] Scheme file used: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/schemes/url_sha1_unpack.cmake.in
 -- [hunter] Building Android-Build-Tools
--- [hunter *** DEBUG *** 2016-06-12T18:40:12] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/cache.cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/args.cmake" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/toolchain.cmake" "-GXcode"
-loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/cache.cmake
-loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/args.cmake
--- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [hunter *** DEBUG *** 2016-06-12T19:07:08] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/cache.cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/args.cmake" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/toolchain.cmake" "-GXcode"
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/cache.cmake
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/args.cmake
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
 -- The C compiler identification is AppleClang 7.3.0.7030029
 -- The CXX compiler identification is AppleClang 7.3.0.7030029
 -- Check for working C compiler using: Xcode
@@ -124,192 +130,62 @@ loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wor
 -- Check for working CXX compiler using: Xcode -- works
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- [hunter *** DEBUG *** 2016-06-12T18:40:21] Scheme: url_sha1_unpack
+-- [hunter *** DEBUG *** 2016-06-12T19:10:57] Scheme: url_sha1_unpack
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build
--- [hunter *** DEBUG *** 2016-06-12T18:40:21] Configure step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools)
--- [hunter *** DEBUG *** 2016-06-12T18:40:21] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build"
-2016-06-12 18:40:21.833 xcodebuild[79520:521777] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:21.836 xcodebuild[79520:521777] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:21.838 xcodebuild[79520:521777] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:21.839 xcodebuild[79520:521777] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:21.840 xcodebuild[79520:521777] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build
+-- [hunter *** DEBUG *** 2016-06-12T19:10:57] Configure step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools)
+-- [hunter *** DEBUG *** 2016-06-12T19:10:57] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build"
+2016-06-12 19:11:03.357 xcodebuild[91018:572664] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:11:03.403 xcodebuild[91018:572664] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:11:03.409 xcodebuild[91018:572664] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:11:03.413 xcodebuild[91018:572664] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:11:03.428 xcodebuild[91018:572664] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
 === BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Project WITH CONFIGURATION Debug ===
 
 Check dependencies
 
 Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/ZERO_CHECK.build/Script-3652F4A9326E4883AA1A91C5.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/ZERO_CHECK.build/Script-3652F4A9326E4883AA1A91C5.sh
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Project.build/Debug-iphoneos/ZERO_CHECK.build/Script-DCE49B14A3B8440B8F536860.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Project.build/Debug-iphoneos/ZERO_CHECK.build/Script-DCE49B14A3B8440B8F536860.sh
 
-PhaseScriptExecution CMake\ Rules Build/Project.build/Debug/ZERO_CHECK.build/Script-3652F4A9326E4883AA1A91C5.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/ZERO_CHECK.build/Script-3652F4A9326E4883AA1A91C5.sh
+PhaseScriptExecution CMake\ Rules Build/Project.build/Debug-iphoneos/ZERO_CHECK.build/Script-DCE49B14A3B8440B8F536860.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Project.build/Debug-iphoneos/ZERO_CHECK.build/Script-DCE49B14A3B8440B8F536860.sh
 echo ""
 
-make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/CMakeScripts/ReRunCMake.make
-make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/CMakeFiles/cmake.check_cache' is up to date.
+make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/CMakeScripts/ReRunCMake.make
+make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/CMakeFiles/cmake.check_cache' is up to date.
 
 === BUILD AGGREGATE TARGET Android-Build-Tools OF PROJECT Project WITH CONFIGURATION Debug ===
 
 Check dependencies
 
 Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/Android-Build-Tools.build/Script-6A8CB39F0BAC44F2A3EB0E1A.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/Android-Build-Tools.build/Script-6A8CB39F0BAC44F2A3EB0E1A.sh
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Project.build/Debug-iphoneos/Android-Build-Tools.build/Script-7CC7EBF63A4143DB8DE19A02.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Project.build/Debug-iphoneos/Android-Build-Tools.build/Script-7CC7EBF63A4143DB8DE19A02.sh
 
-PhaseScriptExecution CMake\ Rules Build/Project.build/Debug/Android-Build-Tools.build/Script-6A8CB39F0BAC44F2A3EB0E1A.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/Android-Build-Tools.build/Script-6A8CB39F0BAC44F2A3EB0E1A.sh
+PhaseScriptExecution CMake\ Rules Build/Project.build/Debug-iphoneos/Android-Build-Tools.build/Script-7CC7EBF63A4143DB8DE19A02.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Project.build/Debug-iphoneos/Android-Build-Tools.build/Script-7CC7EBF63A4143DB8DE19A02.sh
 echo "Creating directories for 'Android-Build-Tools'"
 Creating directories for 'Android-Build-Tools'
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Source
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Source
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/tmp
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Source
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Source
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/tmp
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug-iphoneos
 /usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-mkdir
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug-iphoneos/Android-Build-Tools-mkdir
 echo "Performing download step (download, verify and extract) for 'Android-Build-Tools'"
 Performing download step (download, verify and extract) for 'Android-Build-Tools'
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/download-Android-Build-Tools.cmake
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/verify-Android-Build-Tools.cmake
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/download-Android-Build-Tools.cmake
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/verify-Android-Build-Tools.cmake
 -- verifying file...
      file='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f/build-tools_r22.0.1-macosx.zip'
 -- verifying file... done
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/extract-Android-Build-Tools.cmake
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/extract-Android-Build-Tools.cmake
 -- extracting...
      src='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-Build-Tools/22.0.1/53dad7f/build-tools_r22.0.1-macosx.zip'
-     dst='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Source'
+     dst='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/Android-Build-Tools/Source'
 -- extracting... [tar xfz]
--- extracting... [analysis]
--- extracting... [rename]
--- extracting... [clean up]
--- extracting... done
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-download
-echo "No update step for 'Android-Build-Tools'"
-No update step for 'Android-Build-Tools'
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-update
-echo "No patch step for 'Android-Build-Tools'"
-No patch step for 'Android-Build-Tools'
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-patch
-echo "No configure step for 'Android-Build-Tools'"
-No configure step for 'Android-Build-Tools'
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-configure
-echo "No build step for 'Android-Build-Tools'"
-No build step for 'Android-Build-Tools'
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-build
-echo "No install step for 'Android-Build-Tools'"
-No install step for 'Android-Build-Tools'
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
-cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-install
-echo "Completed 'Android-Build-Tools'"
-Completed 'Android-Build-Tools'
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/CMakeFiles/Debug
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/CMakeFiles/Debug/Android-Build-Tools-complete
-/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-done
-
-=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Project WITH CONFIGURATION Debug ===
-
-Check dependencies
-
-Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/ALL_BUILD.build/Script-E58E02FCDE1B44D1B802D33D.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/ALL_BUILD.build/Script-E58E02FCDE1B44D1B802D33D.sh
-
-PhaseScriptExecution CMake\ Rules Build/Project.build/Debug/ALL_BUILD.build/Script-E58E02FCDE1B44D1B802D33D.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Project.build/Debug/ALL_BUILD.build/Script-E58E02FCDE1B44D1B802D33D.sh
-echo ""
-
-echo Build\ all\ projects
-Build all projects
-
-** BUILD SUCCEEDED **
-
--- [hunter] Build step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools)
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] Try to find stamps in directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] Stamp 'done' location: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Build/Android-Build-Tools/Build/Android-Build-Tools-prefix/src/Android-Build-Tools-stamp/Debug/Android-Build-Tools-done
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] Saving to cache: Android-Build-Tools
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] Non-install (already cached)
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] Cleaning up build directories...
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] Clean up done
--- [hunter *** DEBUG *** 2016-06-12T18:40:23] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/Android-Build-Tools/hunter.cmake ... end
--- Configuring done
--- Generating done
--- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode
-Execute command: [
-  `cmake`
-  `--build`
-  `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode`
-  `--config`
-  `Release`
-  `--`
-  `-jobs`
-  `8`
-]
-[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools]> "cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode" "--config" "Release" "--" "-jobs" "8"
-2016-06-12 18:40:25.274 xcodebuild[79605:521902] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:25.278 xcodebuild[79605:521902] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:25.280 xcodebuild[79605:521902] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:25.282 xcodebuild[79605:521902] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:40:25.282 xcodebuild[79605:521902] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
-User defaults from command line:
-    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 8
-
-Build Preparation
-Build task concurrency set to 8 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
-
-=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Foo WITH CONFIGURATION Release ===
-
-Check dependencies
-
-Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-9DEBC275379B4DDD9CCAA636.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-9DEBC275379B4DDD9CCAA636.sh
-
-PhaseScriptExecution CMake\ Rules _builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-9DEBC275379B4DDD9CCAA636.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-9DEBC275379B4DDD9CCAA636.sh
-echo ""
-
-make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/CMakeScripts/ReRunCMake.make
-make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/CMakeFiles/cmake.check_cache' is up to date.
-
-=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Foo WITH CONFIGURATION Release ===
-
-Check dependencies
-
-Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-9FDFFF6ED86F48F9BF0296E9.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-9FDFFF6ED86F48F9BF0296E9.sh
-
-PhaseScriptExecution CMake\ Rules _builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-9FDFFF6ED86F48F9BF0296E9.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-9FDFFF6ED86F48F9BF0296E9.sh
-echo ""
-
-echo Build\ all\ projects
-Build all projects
-
-** BUILD SUCCEEDED **
-
-Execute command: [
-  `ctest`
-  `-C`
-  `Release`
-  `-VV`
-]
-[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode]> "ctest" "-C" "Release" "-VV"
-UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/DartConfiguration.tcl
-UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode/DartConfiguration.tcl
-Test project /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-Build-Tools/_builds/xcode
-Constructing a list of tests
-Checking test dependency graph...
-Checking test dependency graph end
-No tests were found!!!

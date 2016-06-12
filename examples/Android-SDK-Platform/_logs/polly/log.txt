@@ -284,3 +284,183 @@ cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_
 -- [download 58% complete]
 -- [download 59% complete]
 -- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 67% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 89% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- downloading... done
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/verify-Android-SDK-Platform.cmake
+-- verifying file...
+     file='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655/android-21_r02.zip'
+-- verifying file... done
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/extract-Android-SDK-Platform.cmake
+-- extracting...
+     src='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/Android-SDK-Platform/21_r02/5353655/android-21_r02.zip'
+     dst='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-download
+echo "No update step for 'Android-SDK-Platform'"
+No update step for 'Android-SDK-Platform'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-update
+echo "No patch step for 'Android-SDK-Platform'"
+No patch step for 'Android-SDK-Platform'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-patch
+echo "No configure step for 'Android-SDK-Platform'"
+No configure step for 'Android-SDK-Platform'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-configure
+echo "No build step for 'Android-SDK-Platform'"
+No build step for 'Android-SDK-Platform'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-build
+echo "No install step for 'Android-SDK-Platform'"
+No install step for 'Android-SDK-Platform'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-install
+echo "Completed 'Android-SDK-Platform'"
+Completed 'Android-SDK-Platform'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/CMakeFiles/Debug
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/CMakeFiles/Debug/Android-SDK-Platform-complete
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-done
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Project WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/ALL_BUILD.build/Script-37C5227BA3F54D2EBCDAE54E.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/ALL_BUILD.build/Script-37C5227BA3F54D2EBCDAE54E.sh
+
+PhaseScriptExecution CMake\ Rules Build/Project.build/Debug/ALL_BUILD.build/Script-37C5227BA3F54D2EBCDAE54E.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Project.build/Debug/ALL_BUILD.build/Script-37C5227BA3F54D2EBCDAE54E.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+-- [hunter] Build step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform)
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] Try to find stamps in directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] Stamp 'done' location: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/b29b2d7/b30b22e/Build/Android-SDK-Platform/Build/Android-SDK-Platform-prefix/src/Android-SDK-Platform-stamp/Debug/Android-SDK-Platform-done
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] Saving to cache: Android-SDK-Platform
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] Non-install (already cached)
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] Cleaning up build directories...
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] Clean up done
+-- [hunter *** DEBUG *** 2016-06-12T18:41:45] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/Android-SDK-Platform/hunter.cmake ... end
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode
+Execute command: [
+  `cmake`
+  `--build`
+  `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode`
+  `--config`
+  `Release`
+  `--`
+  `-jobs`
+  `8`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform]> "cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode" "--config" "Release" "--" "-jobs" "8"
+2016-06-12 18:41:46.985 xcodebuild[80379:524272] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:46.987 xcodebuild[80379:524272] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:46.988 xcodebuild[80379:524272] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:46.989 xcodebuild[80379:524272] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:41:46.990 xcodebuild[80379:524272] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 8
+
+Build Preparation
+Build task concurrency set to 8 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Foo WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-223F1A17C2DC4897B2502844.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-223F1A17C2DC4897B2502844.sh
+
+PhaseScriptExecution CMake\ Rules _builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-223F1A17C2DC4897B2502844.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/Foo.build/Release/ZERO_CHECK.build/Script-223F1A17C2DC4897B2502844.sh
+echo ""
+
+make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/CMakeScripts/ReRunCMake.make
+make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Foo WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-7674FE3D49CF45FFA6D024F2.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-7674FE3D49CF45FFA6D024F2.sh
+
+PhaseScriptExecution CMake\ Rules _builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-7674FE3D49CF45FFA6D024F2.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/Foo.build/Release/ALL_BUILD.build/Script-7674FE3D49CF45FFA6D024F2.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+Execute command: [
+  `ctest`
+  `-C`
+  `Release`
+  `-VV`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode]> "ctest" "-C" "Release" "-VV"
+UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode/DartConfiguration.tcl
+Test project /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/Android-SDK-Platform/_builds/xcode
+Constructing a list of tests
+Checking test dependency graph...
+Checking test dependency graph end
+No tests were found!!!

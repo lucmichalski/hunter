@@ -15,40 +15,62 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 Execute command: [
   `cmake`
   `-H.`
-  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode`
+  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3`
   `-GXcode`
-  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake`
+  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/ios-9-3.cmake`
   `-DCMAKE_VERBOSE_MAKEFILE=ON`
   `-DPOLLY_STATUS_DEBUG=ON`
   `-DHUNTER_STATUS_DEBUG=ON`
+  `-DCMAKE_INSTALL_PREFIX=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_install/ios-9-3`
   `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DUSE_OGLES_GPGPU=ON`
   `-DHUNTER_CONFIGURATION_TYPES=Release`
-  `-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10`
-  `-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10`
+  `-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0`
+  `-DCMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH=NO`
+  `-DCMAKE_XCODE_ATTRIBUTE_VALID_ARCHS=armv7,arm64`
+  `-DCMAKE_XCODE_TARGETED_DEVICE_FAMILY=1,2`
+  `-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0`
 ]
-[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10" "-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10"
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/ios-9-3.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DCMAKE_INSTALL_PREFIX=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_install/ios-9-3" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DUSE_OGLES_GPGPU=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0" "-DCMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH=NO" "-DCMAKE_XCODE_ATTRIBUTE_VALID_ARCHS=armv7,arm64" "-DCMAKE_XCODE_TARGETED_DEVICE_FAMILY=1,2" "-DCMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET=8.0"
 Including HunterGate: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/gate/cmake/HunterGate.cmake
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] HUNTER_ROOT detected by cmake variable
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] Settings (initialize):
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HunterGate done (NO)
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   Cache init (YES)
--- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
--- [polly *** DEBUG ***] Used tag: xcode
+-- [hunter *** DEBUG *** 2016-06-12T19:01:26] HUNTER_ROOT detected by cmake variable
+-- [hunter *** DEBUG *** 2016-06-12T19:01:26] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T19:01:26] Settings (initialize):
+-- [hunter *** DEBUG *** 2016-06-12T19:01:26]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T19:01:26]   Cache init (NO)
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
+-- [polly *** DEBUG ***] Used tag: ios-9-3
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX is empty
+-- [polly *** DEBUG ***] CMAKE_DEBUG_POSTFIX set to 'd'
 -- [polly *** DEBUG ***] Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] List of cache servers:
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   * https://github.com/ingenue/hunter-cache
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] Settings (finalize):
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HunterGate done (NO)
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   Cache init (YES)
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] Variables from HunterGate:
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HUNTER_GATE_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HUNTER_GATE_VERSION: xxxxxxxxxx
--- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HUNTER_GATE_SHA1: xxxxxxxxxx
+-- [polly *** DEBUG ***] Developer root: /Applications/Xcode.app/Contents/Developer
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24] List of cache servers:
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24]   * https://github.com/ingenue/hunter-cache
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24] Settings (finalize):
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24]   Cache init (NO)
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24] Variables from HunterGate:
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24]   HUNTER_GATE_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24]   HUNTER_GATE_VERSION: xxxxxxxxxx
+-- [hunter *** DEBUG *** 2016-06-12T19:02:24]   HUNTER_GATE_SHA1: xxxxxxxxxx
 -- [hunter] Calculating Config-SHA1
 -- [hunter] Calculating Toolchain-SHA1
--- [hunter *** DEBUG *** 2016-06-12T18:39:42] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DHUNTER_SELF=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter" "-GXcode" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain/_builds" "-DCMAKE_RELEASE_POSTFIX="
--- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [hunter *** DEBUG *** 2016-06-12T19:02:27] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3/_3rdParty/hunter/toolchain] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3/_3rdParty/hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/ios-9-3.cmake" "-DHUNTER_SELF=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter" "-GXcode" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3/_3rdParty/hunter/toolchain" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3/_3rdParty/hunter/toolchain/_builds" "-DCMAKE_RELEASE_POSTFIX="
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
 -- The C compiler identification is AppleClang 7.3.0.7030029
 -- The CXX compiler identification is AppleClang 7.3.0.7030029
 -- Check for working C compiler using: Xcode
@@ -65,77 +87,249 @@ Including HunterGate: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/sh
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain/_builds
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] Already exists: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/toolchain.info
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] Cache data is up-to-date
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3/_3rdParty/hunter/toolchain/_builds
+-- [hunter *** DEBUG *** 2016-06-12T19:03:17] Already exists: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/toolchain.info
 -- [hunter] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] HUNTER_TOOLCHAIN_ID_PATH: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] HUNTER_CONFIGURATION_TYPES: Release
--- [hunter] [ Hunter-ID: xxxxxxx | Config-ID: 1a7b326 | Toolchain-ID: b30b22e ]
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/AllTheFlopsThreads/hunter.cmake
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] AllTheFlopsThreads versions available: [0.1-p0]
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] Install to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Install
--- [hunter] ALLTHEFLOPSTHREADS_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Install (ver.: 0.1-p0)
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] Default arguments:
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] User arguments:
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] Package already installed: AllTheFlopsThreads
--- [hunter *** DEBUG *** 2016-06-12T18:39:56] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/AllTheFlopsThreads/hunter.cmake ... end
+-- [hunter *** DEBUG *** 2016-06-12T19:03:17] HUNTER_TOOLCHAIN_ID_PATH: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161
+-- [hunter *** DEBUG *** 2016-06-12T19:03:17] HUNTER_CONFIGURATION_TYPES: Release
+-- [hunter] [ Hunter-ID: xxxxxxx | Config-ID: 1a7b326 | Toolchain-ID: a7d4161 ]
+-- [hunter *** DEBUG *** 2016-06-12T19:03:17] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/AllTheFlopsThreads/hunter.cmake
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] AllTheFlopsThreads versions available: [0.1-p0]
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Install to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Install
+-- [hunter] ALLTHEFLOPSTHREADS_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Install (ver.: 0.1-p0)
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Default arguments:
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] User arguments:
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/AllTheFlopsThreads/0.1-p0/f8cbbdc
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Already locked: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/AllTheFlopsThreads/0.1-p0/f8cbbdc
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161
+-- [hunter *** DEBUG *** 2016-06-12T19:03:18] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19] Downloading file (try #0 of 10):
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19]   https://raw.githubusercontent.com/ingenue/hunter-cache/master/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2016-06-12T19:03:19]   -> /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e/basic-deps.DONE
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] File not found
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Cache miss (no basic dependencies info found: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e/basic-deps.DONE)
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Number of logical cores: 4
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] HUNTER_JOBS_NUMBER:
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] HUNTER_JOBS_OPTION: 4
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Add package: AllTheFlopsThreads
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Download scheme: url_sha1_cmake
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Url: https://github.com/hunter-packages/alltheflops-threads/archive/v0.1-p0.tar.gz
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] SHA1: f8cbbdcbaf758da584de2d2388fd8818c236c682
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Configuration types: Release
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] Scheme file used: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/schemes/url_sha1_cmake.cmake.in
+-- [hunter] Building AllTheFlopsThreads
+-- [hunter *** DEBUG *** 2016-06-12T19:03:20] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/cache.cmake" "-C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/args.cmake" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/toolchain.cmake" "-GXcode"
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/cache.cmake
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/args.cmake
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter *** DEBUG *** 2016-06-12T19:04:00] Scheme: url_sha1_cmake
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode
-Execute command: [
-  `cmake`
-  `--build`
-  `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode`
-  `--config`
-  `Release`
-  `--`
-  `-jobs`
-  `8`
-]
-[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode" "--config" "Release" "--" "-jobs" "8"
-2016-06-12 18:39:57.871 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:39:57.873 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:39:57.874 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:39:57.876 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
-2016-06-12 18:39:57.876 xcodebuild[79050:520371] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
-User defaults from command line:
-    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 8
-
-Build Preparation
-Build task concurrency set to 8 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
-
-=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT download-alltheflopsthreads WITH CONFIGURATION Release ===
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build
+-- [hunter *** DEBUG *** 2016-06-12T19:04:00] Configure step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads)
+-- [hunter *** DEBUG *** 2016-06-12T19:04:00] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build"
+2016-06-12 19:04:00.845 xcodebuild[89596:563385] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:04:00.848 xcodebuild[89596:563385] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:04:00.849 xcodebuild[89596:563385] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:04:00.850 xcodebuild[89596:563385] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:04:00.851 xcodebuild[89596:563385] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT Hunter WITH CONFIGURATION Debug ===
 
 Check dependencies
 
 Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/ZERO_CHECK.build/Script-9F3B3F9F46C1403B8A309203.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/ZERO_CHECK.build/Script-9F3B3F9F46C1403B8A309203.sh
 
-PhaseScriptExecution CMake\ Rules _builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug-iphoneos/ZERO_CHECK.build/Script-9F3B3F9F46C1403B8A309203.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/ZERO_CHECK.build/Script-9F3B3F9F46C1403B8A309203.sh
 echo ""
 
-make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/CMakeScripts/ReRunCMake.make
-make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/CMakeFiles/cmake.check_cache' is up to date.
+make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/CMakeScripts/ReRunCMake.make
+make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/CMakeFiles/cmake.check_cache' is up to date.
 
-=== BUILD TARGET foo OF PROJECT download-alltheflopsthreads WITH CONFIGURATION Release ===
-
-Check dependencies
-
-=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT download-alltheflopsthreads WITH CONFIGURATION Release ===
+=== BUILD AGGREGATE TARGET AllTheFlopsThreads-Release OF PROJECT Hunter WITH CONFIGURATION Debug ===
 
 Check dependencies
 
 Write auxiliary files
-write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
-chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/AllTheFlopsThreads-Release.build/Script-CAB530E75BCC4FBBA70C4287.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/AllTheFlopsThreads-Release.build/Script-CAB530E75BCC4FBBA70C4287.sh
 
-PhaseScriptExecution CMake\ Rules _builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
-    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads
-    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug-iphoneos/AllTheFlopsThreads-Release.build/Script-CAB530E75BCC4FBBA70C4287.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/AllTheFlopsThreads-Release.build/Script-CAB530E75BCC4FBBA70C4287.sh
+echo "Creating directories for 'AllTheFlopsThreads-Release'"
+Creating directories for 'AllTheFlopsThreads-Release'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/tmp
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/AllTheFlopsThreads/0.1-p0/f8cbbdc
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-mkdir
+echo "Performing download step (download, verify and extract) for 'AllTheFlopsThreads-Release'"
+Performing download step (download, verify and extract) for 'AllTheFlopsThreads-Release'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/download-AllTheFlopsThreads-Release.cmake
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/verify-AllTheFlopsThreads-Release.cmake
+-- verifying file...
+     file='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/AllTheFlopsThreads/0.1-p0/f8cbbdc/v0.1-p0.tar.gz'
+-- verifying file... done
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads && /usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/extract-AllTheFlopsThreads-Release.cmake
+-- extracting...
+     src='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Download/AllTheFlopsThreads/0.1-p0/f8cbbdc/v0.1-p0.tar.gz'
+     dst='/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-download
+echo "No update step for 'AllTheFlopsThreads-Release'"
+No update step for 'AllTheFlopsThreads-Release'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-update
+echo "No patch step for 'AllTheFlopsThreads-Release'"
+No patch step for 'AllTheFlopsThreads-Release'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-patch
+echo "Performing configure step for 'AllTheFlopsThreads-Release'"
+Performing configure step for 'AllTheFlopsThreads-Release'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -GXcode -C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/cache.cmake -C/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/args.cmake -DCMAKE_RELEASE_POSTFIX= -DCMAKE_BUILD_TYPE=Release -DCMAKE_CONFIGURATION_TYPES=Release -DCMAKE_INSTALL_PREFIX=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install -DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/toolchain.cmake -DCMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH=NO -DCMAKE_IOS_INSTALL_COMBINED=YES -GXcode /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/cache.cmake
+loading initial cache file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/args.cmake
+-- [polly] Used toolchain: iOS 9.3 Universal (iphoneos + iphonesimulator) / clang / c++11 support
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-configure
+echo "No build step for 'AllTheFlopsThreads-Release'"
+No build step for 'AllTheFlopsThreads-Release'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E echo_append
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-build
+echo "Performing install step for 'AllTheFlopsThreads-Release'"
+Performing install step for 'AllTheFlopsThreads-Release'
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake --build . --target install --config Release -- -jobs 4
+2016-06-12 19:05:11.715 xcodebuild[89891:564463] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:11.718 xcodebuild[89891:564463] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:11.719 xcodebuild[89891:564463] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:11.720 xcodebuild[89891:564463] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:11.722 xcodebuild[89891:564463] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+2016-06-12 19:05:12.008 xcodebuild[89891:564463] Build settings from command line:
+2016-06-12 19:05:12.008 xcodebuild[89891:564463]     ENABLE_BITCODE = NO
+2016-06-12 19:05:12.008 xcodebuild[89891:564463]     SWIFT_DISABLE_REQUIRED_ARCLITE = YES
+2016-06-12 19:05:12.009 xcodebuild[89891:564463]     SWIFT_LINK_OBJC_RUNTIME = YES
+2016-06-12 19:05:12.009 xcodebuild[89891:564463]     TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+2016-06-12 19:05:12.009 xcodebuild[89891:564463]     XCODE_DEFAULT_TOOLCHAIN_OVERRIDE = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 4
+
+Build Preparation
+Build task concurrency set to 4 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT AllTheFlopsThreads WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ZERO_CHECK.build/Script-45483B08C0B54AF88430A702.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ZERO_CHECK.build/Script-45483B08C0B54AF88430A702.sh
+
+PhaseScriptExecution CMake\ Rules /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ZERO_CHECK.build/Script-45483B08C0B54AF88430A702.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ZERO_CHECK.build/Script-45483B08C0B54AF88430A702.sh
+echo ""
+
+make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/CMakeScripts/ReRunCMake.make
+make[2]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT AllTheFlopsThreads WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ALL_BUILD.build/Script-355F57688F6F4438AC0C89C0.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ALL_BUILD.build/Script-355F57688F6F4438AC0C89C0.sh
+
+PhaseScriptExecution CMake\ Rules /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ALL_BUILD.build/Script-355F57688F6F4438AC0C89C0.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/ALL_BUILD.build/Script-355F57688F6F4438AC0C89C0.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+=== BUILD AGGREGATE TARGET install OF PROJECT AllTheFlopsThreads WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/install.build/Script-7876714F076540DA992EB684.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/install.build/Script-7876714F076540DA992EB684.sh
+
+PhaseScriptExecution CMake\ PostBuild\ Rules /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/install.build/Script-7876714F076540DA992EB684.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build/AllTheFlopsThreads.build/Release-iphoneos/install.build/Script-7876714F076540DA992EB684.sh
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -DBUILD_TYPE=Release -DEFFECTIVE_PLATFORM_NAME=-iphoneos -P cmake_install.cmake
+-- Install configuration: "Release"
+-- Installing: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install/include/async_queue.hpp
+-- Installing: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install/lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsConfig.cmake
+-- Installing: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install/lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsConfigVersion.cmake
+-- Installing: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install/lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsTargets.cmake
+
+** BUILD SUCCEEDED **
+
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -Dsrcdir=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Source -Ddstfile=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install/licenses/AllTheFlopsThreads/LICENSE -P /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/scripts/try-copy-license.cmake
+cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-build && /usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-install
+echo "Completed 'AllTheFlopsThreads-Release'"
+Completed 'AllTheFlopsThreads-Release'
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E make_directory /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/CMakeFiles/Debug-iphoneos
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/CMakeFiles/Debug-iphoneos/AllTheFlopsThreads-Release-complete
+/usr/local/Cellar/cmake/3.5.2/bin/cmake -E touch /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-done
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT Hunter WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/ALL_BUILD.build/Script-92BA90C195B545B09ADB1B67.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/ALL_BUILD.build/Script-92BA90C195B545B09ADB1B67.sh
+
+PhaseScriptExecution CMake\ Rules Build/Hunter.build/Debug-iphoneos/ALL_BUILD.build/Script-92BA90C195B545B09ADB1B67.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/Hunter.build/Debug-iphoneos/ALL_BUILD.build/Script-92BA90C195B545B09ADB1B67.sh
 echo ""
 
 echo Build\ all\ projects
@@ -143,17 +337,81 @@ Build all projects
 
 ** BUILD SUCCEEDED **
 
+-- [hunter] Build step successful (dir: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads)
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Try to find stamps in directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Stamp 'done' location: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Build/AllTheFlopsThreads-Release-prefix/src/AllTheFlopsThreads-Release-stamp/Debug-iphoneos/AllTheFlopsThreads-Release-done
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Saving to cache: AllTheFlopsThreads
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/Install] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-E" "tar" "cvjf" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/raw/cache.tar.bz2" "--" "include" "lib" "licenses"
+include
+include/async_queue.hpp
+lib
+lib/cmake
+lib/cmake/AllTheFlopsThreads
+lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsConfig.cmake
+lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsConfigVersion.cmake
+lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsTargets.cmake
+licenses
+licenses/AllTheFlopsThreads
+licenses/AllTheFlopsThreads/LICENSE
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Packing successful: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/raw/cache.tar.bz2
+-- [hunter] Cache saved: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/raw/0ecffec41ed52fb0494ee59fcf7dc1ca92f29869.tar.bz2
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Unpacking:
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14]   /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/raw/0ecffec41ed52fb0494ee59fcf7dc1ca92f29869.tar.bz2
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14]   -> /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Install
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Install] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-E" "tar" "xvf" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/raw/0ecffec41ed52fb0494ee59fcf7dc1ca92f29869.tar.bz2"
+x include/
+x include/async_queue.hpp
+x lib/
+x lib/cmake/
+x lib/cmake/AllTheFlopsThreads/
+x lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsConfig.cmake
+x lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsConfigVersion.cmake
+x lib/cmake/AllTheFlopsThreads/AllTheFlopsThreadsTargets.cmake
+x licenses/
+x licenses/AllTheFlopsThreads/
+x licenses/AllTheFlopsThreads/LICENSE
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Unpacked successfully
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Saving cache file: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/a7d4161/Build/AllTheFlopsThreads/cache.sha1
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] No basic dependencies for package: AllTheFlopsThreads
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] No dependencies for package: AllTheFlopsThreads
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Locking directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e/da39a3e
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Lock done
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Cache directory: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e/da39a3e
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Dependencies saved: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/Cache/meta/a7d4161/AllTheFlopsThreads/0.1-p0/f8cbbdc/da39a3e/d41f56c/da39a3e/da39a3e/deps.info
+-- [hunter *** DEBUG *** 2016-06-12T19:05:14] Cleaning up build directories...
+-- [hunter *** DEBUG *** 2016-06-12T19:05:15] Clean up done
+-- [hunter *** DEBUG *** 2016-06-12T19:05:15] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/AllTheFlopsThreads/hunter.cmake ... end
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_XCODE_TARGETED_DEVICE_FAMILY
+    USE_OGLES_GPGPU
+
+
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3
 Execute command: [
-  `ctest`
-  `-C`
+  `cmake`
+  `--build`
+  `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3`
+  `--config`
   `Release`
-  `-VV`
+  `--target`
+  `install`
+  `--`
+  `-jobs`
+  `8`
 ]
-[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode]> "ctest" "-C" "Release" "-VV"
-UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/DartConfiguration.tcl
-UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/DartConfiguration.tcl
-Test project /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode
-Constructing a list of tests
-Checking test dependency graph...
-Checking test dependency graph end
-No tests were found!!!
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/ios-9-3" "--config" "Release" "--target" "install" "--" "-jobs" "8"
+2016-06-12 19:05:17.206 xcodebuild[89968:564612] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:17.209 xcodebuild[89968:564612] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:17.210 xcodebuild[89968:564612] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:17.211 xcodebuild[89968:564612] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 19:05:17.211 xcodebuild[89968:564612] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 8
+
+xcodebuild: error: The project 'download-alltheflopsthreads.xcodeproj' does not contain a target named 'install'.

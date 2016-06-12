@@ -13,12 +13,13 @@ hunter_add_version(
     PACKAGE_NAME
     LibMill
     VERSION
-    "1.12-m0"
+    "1.12-m2"
     URL
-    "https://github.com/lucmichalski/libmill/archive/1.12-m0.tar.gz"
+    "https://github.com/lucmichalski/libmill/archive/1.12-m2.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    c9c607caef6ec8bcc5e6c9fe804f16d264278549
     )
+
 
 hunter_cmake_args(
     LibMill
