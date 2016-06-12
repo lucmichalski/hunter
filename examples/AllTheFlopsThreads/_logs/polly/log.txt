@@ -1,0 +1,159 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "--version"
+cmake version 3.5.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode`
+  `-GXcode`
+  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake`
+  `-DCMAKE_VERBOSE_MAKEFILE=ON`
+  `-DPOLLY_STATUS_DEBUG=ON`
+  `-DHUNTER_STATUS_DEBUG=ON`
+  `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10`
+  `-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10" "-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10"
+Including HunterGate: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/gate/cmake/HunterGate.cmake
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] HUNTER_ROOT detected by cmake variable
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] Settings (initialize):
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   Cache init (YES)
+-- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- [polly *** DEBUG ***] Used tag: xcode
+-- [polly *** DEBUG ***] Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] List of cache servers:
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   * https://github.com/ingenue/hunter-cache
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] Settings (finalize):
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HunterGate done (NO)
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   Cache init (YES)
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] Variables from HunterGate:
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HUNTER_GATE_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HUNTER_GATE_VERSION: xxxxxxxxxx
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42]   HUNTER_GATE_SHA1: xxxxxxxxxx
+-- [hunter] Calculating Config-SHA1
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter *** DEBUG *** 2016-06-12T18:39:42] [/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain] > "/usr/local/Cellar/cmake/3.5.2/bin/cmake" "-DTOOLCHAIN_INFO_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain/toolchain.info" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DHUNTER_SELF=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter" "-GXcode" "-H/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain" "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain/_builds" "-DCMAKE_RELEASE_POSTFIX="
+-- [polly] Used toolchain: Xcode / clang / LLVM Standard C++ Library (libc++) / c++11 support
+-- The C compiler identification is AppleClang 7.3.0.7030029
+-- The CXX compiler identification is AppleClang 7.3.0.7030029
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/_3rdParty/hunter/toolchain/_builds
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] Already exists: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/toolchain.info
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] Cache data is up-to-date
+-- [hunter] HUNTER_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] HUNTER_TOOLCHAIN_ID_PATH: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] HUNTER_CONFIGURATION_TYPES: Release
+-- [hunter] [ Hunter-ID: xxxxxxx | Config-ID: 1a7b326 | Toolchain-ID: b30b22e ]
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/AllTheFlopsThreads/hunter.cmake
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] AllTheFlopsThreads versions available: [0.1-p0]
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] Install to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Install
+-- [hunter] ALLTHEFLOPSTHREADS_ROOT: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/_Base/xxxxxxx/1a7b326/b30b22e/Install (ver.: 0.1-p0)
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] Default arguments:
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] User arguments:
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] Package already installed: AllTheFlopsThreads
+-- [hunter *** DEBUG *** 2016-06-12T18:39:56] load: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/cmake/projects/AllTheFlopsThreads/hunter.cmake ... end
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode
+Execute command: [
+  `cmake`
+  `--build`
+  `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode`
+  `--config`
+  `Release`
+  `--`
+  `-jobs`
+  `8`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads]> "cmake" "--build" "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode" "--config" "Release" "--" "-jobs" "8"
+2016-06-12 18:39:57.871 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Unity4XC.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:39:57.873 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaPodUI.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:39:57.874 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CocoaControlsPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:39:57.876 xcodebuild[79050:520371] [MT] PluginLoading: Required plug-in compatibility UUID ACA8656B-FEA8-4B6D-8E4A-93F4C95C362C for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-06-12 18:39:57.876 xcodebuild[79050:520371] Failed to load plugin at: /Users/Luccio/Library/Application Support/Developer/Shared/Xcode/Plug-ins/._Alcatraz.xcplugin, skipping.  Reason for failure: *** -[__NSPlaceholderDictionary initWithObjects:forKeys:count:]: attempt to insert nil object from objects[0]
+User defaults from command line:
+    IDEBuildOperationMaxNumberOfConcurrentCompileTasks = 8
+
+Build Preparation
+Build task concurrency set to 8 via user default IDEBuildOperationMaxNumberOfConcurrentCompileTasks
+
+=== BUILD AGGREGATE TARGET ZERO_CHECK OF PROJECT download-alltheflopsthreads WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
+
+PhaseScriptExecution CMake\ Rules _builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ZERO_CHECK.build/Script-4B8BBF44C09644FD9C79579B.sh
+echo ""
+
+make -f /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/CMakeScripts/ReRunCMake.make
+make[1]: `/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/CMakeFiles/cmake.check_cache' is up to date.
+
+=== BUILD TARGET foo OF PROJECT download-alltheflopsthreads WITH CONFIGURATION Release ===
+
+Check dependencies
+
+=== BUILD AGGREGATE TARGET ALL_BUILD OF PROJECT download-alltheflopsthreads WITH CONFIGURATION Release ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
+chmod 0755 /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
+
+PhaseScriptExecution CMake\ Rules _builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
+    cd /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads
+    /bin/sh -c /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/download-alltheflopsthreads.build/Release/ALL_BUILD.build/Script-E9C5DF29FB124D1EB2414296.sh
+echo ""
+
+echo Build\ all\ projects
+Build all projects
+
+** BUILD SUCCEEDED **
+
+Execute command: [
+  `ctest`
+  `-C`
+  `Release`
+  `-VV`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode]> "ctest" "-C" "Release" "-VV"
+UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode/DartConfiguration.tcl
+Test project /Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/AllTheFlopsThreads/_builds/xcode
+Constructing a list of tests
+Checking test dependency graph...
+Checking test dependency graph end
+No tests were found!!!

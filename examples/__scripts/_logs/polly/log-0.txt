@@ -1,0 +1,31 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/__scripts]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/__scripts]> "cmake" "--version"
+cmake version 3.5.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/__scripts/_builds/xcode`
+  `-GXcode`
+  `-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake`
+  `-DCMAKE_VERBOSE_MAKEFILE=ON`
+  `-DPOLLY_STATUS_DEBUG=ON`
+  `-DHUNTER_STATUS_DEBUG=ON`
+  `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DHUNTER_CONFIGURATION_TYPES=Release`
+  `-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10`
+  `-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10`
+]
+[/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/__scripts]> "cmake" "-H." "-B/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/__scripts/_builds/xcode" "-GXcode" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/polly/xcode.cmake" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DPOLLY_STATUS_DEBUG=ON" "-DHUNTER_STATUS_DEBUG=ON" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DHUNTER_CONFIGURATION_TYPES=Release" "-DCMAKE_XCODE_ATTRIBUTE_OSX_DEPLOYMENT_TARGET=10.10" "-DCMAKE_OSX_DEPLOYMENT_TARGET=10.10"
+CMake Error: The source directory "/Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/utils/hunter/examples/__scripts" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
