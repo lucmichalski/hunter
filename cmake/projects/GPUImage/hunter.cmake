@@ -1,5 +1,4 @@
-# Copyright (c) 2016, Luc Michalski
-# All rights reserved.
+# Added by Luc Michalski - 2016
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
@@ -19,7 +18,7 @@ hunter_add_version(
     URL
     "https://github.com/lucmichalski/GPUImage/archive/0.1.7-m7.tar.gz"
     SHA1
-    f88955f47167cd8cdd960ddf1d386c22b4b3c2e4
+    a94ea4efc768f1243f71170788f12f2723cecbd8
     )
 
 
