@@ -1,4 +1,5 @@
-# Added by Luc Michalski - 2016
+# Copyright (c) 2016, Ruslan Baratov
+# All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
@@ -16,8 +17,8 @@ hunter_add_version(
     URL
     "https://github.com/hunter-packages/convertutf/archive/v1.0.1.tar.gz"
     SHA1
-    757b75fff721260620050bc54096150ffd335672
-    )
+    83c1f454b3d6789d5048e1198577092f1a77c7a2
+)
 
 hunter_add_version(
     PACKAGE_NAME
