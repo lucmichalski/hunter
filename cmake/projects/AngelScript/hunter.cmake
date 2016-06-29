@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/hunter-packages/AngelScript/archive/v1.0.0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    b34e7a087513b579368927642e576722cbe067e8
     )
 
 #hunter_cmake_args(

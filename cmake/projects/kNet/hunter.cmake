@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/hunter-packages/kNet/archive/v1.0.0-p0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    8505ccf544b62edc6a9b67b791009119cd736213
     )
 
 #hunter_cmake_args(

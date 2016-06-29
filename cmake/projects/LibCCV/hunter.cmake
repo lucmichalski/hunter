@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/lucmichalski/ccv/archive/0.1-m0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    87020d6c7984c19b6c53877db4aab416c8babedd
     )
 
 hunter_cmake_args(

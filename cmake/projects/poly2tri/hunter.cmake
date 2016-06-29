@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/hunter-packages/poly2tri/archive/v1.0.0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    6ac163c6eedc5f4d533c6e2cf8ea209a72f7a643
     )
 
 #hunter_cmake_args(

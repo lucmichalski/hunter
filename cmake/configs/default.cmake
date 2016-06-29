@@ -22,6 +22,10 @@
 include(hunter_config)
 include(hunter_user_error)
 
+# Headupintheclouds
+hunter_config(dest VERSION 0.8.0-p2)
+hunter_config(flatbuffers VERSION 1.3.0-p0)
+
 # Done (Forked+Pre-Release)
 hunter_config(LibMill VERSION 1.12-m2)
 hunter_config(NanoMsg VERSION 1.0.0-m1)
@@ -31,7 +35,7 @@ hunter_config(GPUImage VERSION 0.1.7-m7)
 
 hunter_config(Urho3D VERSION 1.32-m0)
 hunter_config(openddl-parser VERSION 0.3.0-beta)
-hunter_config(box2D VERSION 1.0.0-p0)
+hunter_config(Box2D VERSION 1.0.0-p0)
 hunter_config(poly2tri VERSION 1.0.0)
 hunter_config(clipper VERSION 22.0.0-p0)
 hunter_config(assimp VERSION 3.2)

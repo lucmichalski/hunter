@@ -16,23 +16,14 @@ hunter_add_version(
     URL
     "https://github.com/lucmichalski/Urho3D/archive/1.32-m0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    4d1ba78eff2929397b7c6717be16f3e53bfe378d
     )
 
-#hunter_cmake_args(
-#    Urho3D
-#    CMAKE_ARGS 
-#	WITH_STATIC_LIB=ON
-#	WITH_SHARED_LIB=OFF
-#    BUILD_TESTING=OFF
-#    BUILD_COMPILER=OFF
-#	BUILD_CPP=ON
-#	BUILD_C_GLIB=OFF
-#	BUILD_JAVA=OFF
-#	BUILD_PYTHON=OFF
-#	BUILD_HASKELL=OFF
-#	BUILD_LIBRARIES=ON
-#)
+hunter_cmake_args(
+    Urho3D
+    CMAKE_ARGS 
+	IOS=1
+)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Urho3D)

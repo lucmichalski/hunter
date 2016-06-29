@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/hunter-packages/irrXML/archive/1.2.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    726c1461d51fda1908b4050603682de680925b44
     )
 
 #hunter_cmake_args(

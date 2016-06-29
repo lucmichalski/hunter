@@ -10,15 +10,15 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    SQLite
+    thread-pool-cpp
     VERSION
     "1.0.0"
     URL
-    "https://github.com/hunter-packages/SQLite/archive/v1.0.0.tar.gz"
+    https://github.com/headupinclouds/thread-pool-cpp/archive/v1.0.0.tar.gz
     SHA1
-    5b3a005b2836a97767b7cfeaf23cb15d20a0ce33    
+    8c657d3b3f494761838cc0c42e83ede82ff31525    
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(SQLite)
-hunter_download(PACKAGE_NAME SQLite)
+hunter_cacheable(thread-pool-cpp)
+hunter_download(PACKAGE_NAME thread-pool-cpp)

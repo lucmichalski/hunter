@@ -12,11 +12,22 @@ hunter_add_version(
     PACKAGE_NAME
     convertutf
     VERSION
+    "1.0.1"
+    URL
+    "https://github.com/hunter-packages/convertutf/archive/v1.0.1.tar.gz"
+    SHA1
+    757b75fff721260620050bc54096150ffd335672
+    )
+
+hunter_add_version(
+    PACKAGE_NAME
+    convertutf
+    VERSION
     "1.0.0"
     URL
     "https://github.com/hunter-packages/convertutf/archive/v1.0.0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    757b75fff721260620050bc54096150ffd335672
     )
 
 #hunter_cmake_args(

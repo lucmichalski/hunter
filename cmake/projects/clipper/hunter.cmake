@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/hunter-packages/clipper/archive/v22.0.0-p0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    b7f4efcd1a914050a324b5f87bbfa6aa1801a00b
     )
 
 #hunter_cmake_args(

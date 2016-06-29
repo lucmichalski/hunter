@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     "https://github.com/kimkulling/openddl-parser/archive/v0.3.0-beta.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    850bdae59dd6e668b4911b2f54e82567548d8b39
     )
 
 #hunter_cmake_args(

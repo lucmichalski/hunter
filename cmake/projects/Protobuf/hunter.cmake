@@ -29,7 +29,13 @@ hunter_add_version(
   )
 
 
-hunter_cmake_args(Protobuf CMAKE_ARGS  CMAKE_ARGS protobuf_BUILD_TESTS=OFF)
+hunter_cmake_args(
+    Protobuf
+    CMAKE_ARGS 
+    protobuf_BUILD_TESTS=OFF
+    protobuf_BUILD_SHARED_LIBS=OFF
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Protobuf)
 hunter_download(PACKAGE_NAME Protobuf)

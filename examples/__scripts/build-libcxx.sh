@@ -16,9 +16,9 @@ function build_all
         "--verbose --fwd HUNTER_CONFIGURATION_TYPES=Release "
         "${GATHERER_BUILD_ARGS[*]} "
         "--config Release "
-        "--install "
         "--jobs 8 "
-        "--reconfig "
+        "--clear "
+        "--nobuild "
         "${EXTRA_ARGS} "
     )
     

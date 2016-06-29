@@ -6,6 +6,7 @@
 include(hunter_add_version)
 include(hunter_cacheable)
 include(hunter_download)
+include(hunter_cmake_args)
 include(hunter_pick_scheme)
 
 hunter_add_version(
@@ -28,6 +29,12 @@ hunter_add_version(
     "https://github.com/hunter-packages/glog/archive/v0.3.4-p1.tar.gz"
     SHA1
     512b8ad6d9aae9499cca2e4c4530b9386cb05440
+)
+
+hunter_cmake_args(
+    glog
+    CMAKE_ARGS 
+    WITH_GFLAGS=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)

@@ -1,39 +1,24 @@
-# Added by Luc Michalski - 2016
+# Copyright (c) 2016, Ruslan Baratov
+# All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
 include(hunter_cacheable)
-include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    box2D
+    Box2D
     VERSION
     "1.0.0-p0"
     URL
     "https://github.com/hunter-packages/Box2D/archive/v1.0.0-p0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
-    )
-
-#hunter_cmake_args(
-#    box2D
-#    CMAKE_ARGS 
-#	WITH_STATIC_LIB=ON
-#	WITH_SHARED_LIB=OFF
-#    BUILD_TESTING=OFF
-#    BUILD_COMPILER=OFF
-#	BUILD_CPP=ON
-#	BUILD_C_GLIB=OFF
-#	BUILD_JAVA=OFF
-#	BUILD_PYTHON=OFF
-#	BUILD_HASKELL=OFF
-#	BUILD_LIBRARIES=ON
-#)
+    6c00ce441ea1d78ec1ca2e3d5e43929babd9b4f4
+)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(box2D)
-hunter_download(PACKAGE_NAME box2D)
+hunter_cacheable(Box2D)
+hunter_download(PACKAGE_NAME Box2D)

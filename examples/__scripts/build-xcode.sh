@@ -20,8 +20,8 @@ function build_all
         "CMAKE_OSX_DEPLOYMENT_TARGET=10.11 "
         "--config Release "
         "--jobs 8 "
-        "--reconfig "
-        "--test "
+        "--clear "
+        "--nobuild "
         "${EXTRA_ARGS} "
     )
 

@@ -7,6 +7,7 @@ include(hunter_add_version)
 include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_cmake_args)
 
 hunter_add_version(
     PACKAGE_NAME
@@ -149,6 +150,13 @@ hunter_add_version(
     "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p2.tar.gz"
     SHA1
     93148cb8850abe78b76ed87158fdb6b9c48e38c4
+)
+
+hunter_cmake_args(
+    glog
+    CMAKE_ARGS 
+    BUILD_GTEST=OFF
+    BUILD_GMOCK=ON
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)

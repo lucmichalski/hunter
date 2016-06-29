@@ -12,11 +12,22 @@ hunter_add_version(
     PACKAGE_NAME
     assimp
     VERSION
+    "3.2-p1"
+    URL
+    "https://github.com/hunter-packages/assimp/archive/v3.2-p1.tar.gz"
+    SHA1
+    018ce1cc19f0cf89dd5157cfbfa1c2925eab6926
+    )
+
+hunter_add_version(
+    PACKAGE_NAME
+    assimp
+    VERSION
     "3.2"
     URL
     "https://github.com/hunter-packages/assimp/archive/v3.2.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    b811a9fc366f8ddd16ea767585f3f0080c17c447
     )
 
 #hunter_cmake_args(
