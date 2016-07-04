@@ -1,11 +1,8 @@
-# Added by Luc Michalski - 2016
-
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 # Load used modules
 include(hunter_add_version)
 include(hunter_download)
-include(hunter_cmake_args)
 include(hunter_pick_scheme)
 include(hunter_cacheable)
 
@@ -30,21 +27,6 @@ hunter_add_version(
         SHA1
         daebe20807e166f62f3671f742e81e8d2959388b
 )
-
-#hunter_cmake_args(
-#    SDL2
-#    CMAKE_ARGS 
-#   WITH_STATIC_LIB=ON
-#   WITH_SHARED_LIB=OFF
-#    BUILD_TESTING=OFF
-#    BUILD_COMPILER=OFF
-#   BUILD_CPP=ON
-#   BUILD_C_GLIB=OFF
-#   BUILD_JAVA=OFF
-#   BUILD_PYTHON=OFF
-#   BUILD_HASKELL=OFF
-#   BUILD_LIBRARIES=ON
-#)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(SDL2)

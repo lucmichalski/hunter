@@ -25,6 +25,7 @@ include(hunter_user_error)
 # Headupintheclouds
 hunter_config(dest VERSION 0.8.0-p2)
 hunter_config(flatbuffers VERSION 1.3.0-p0)
+hunter_config(Autobahn-cpp VERSION 0.2.0-p2)
 
 # Done (Forked+Pre-Release)
 hunter_config(LibMill VERSION 1.12-m2)
