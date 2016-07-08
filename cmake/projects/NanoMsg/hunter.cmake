@@ -14,6 +14,17 @@ hunter_add_version(
     PACKAGE_NAME
     NanoMsg
     VERSION
+    "1.0.0-p0"
+    URL
+    "https://github.com/ConfusedReality/nanomsg/archive/1.0.0-p0.tar.gz"
+    SHA1
+    50aef0b35a725008f000bc3e93872744108107ac
+    )
+
+hunter_add_version(
+    PACKAGE_NAME
+    NanoMsg
+    VERSION
     "1.0.0-m1"
     URL
     "https://github.com/lucmichalski/nanomsg/archive/1.0.0-m1.tar.gz"

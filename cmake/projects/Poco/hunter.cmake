@@ -1,0 +1,63 @@
+include(hunter_add_version)
+include(hunter_cmake_args)
+include(hunter_pick_scheme)
+include(hunter_cacheable)
+include(hunter_download)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Poco
+    VERSION
+    1.7.3-p0
+    URL
+    "https://github.com/ConfusedReality/poco/archive/poco-1.7.3-p0.tar.gz"
+    SHA1
+    22dcb34d85d2cbf2ce71fd84b28489c99ed112d0
+)
+
+hunter_cmake_args(
+    Poco
+    CMAKE_ARGS
+        CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE
+        POCO_STATIC=ON
+        POCO_UNBUNDLED=OFF
+        POCO_MT=OFF
+        ENABLE_CPPUNIT=OFF
+        ENABLE_MONGODB=OFF
+        ENABLE_NETSSL=OFF
+        ENABLE_CRYPTO=OFF
+        ENABLE_DATA=OFF
+        ENABLE_PAGECOMPILER=OFF
+        ENABLE_PAGECOMPILER_FILE2PAGE=OFF
+        ENABLE_REDIS=OFF
+        ENABLE_XML=ON
+        ENABLE_JSON=ON
+        ENABLE_MONGODB=OFF
+        ENABLE_PDF=OFF
+        ENABLE_UTIL=ON
+        ENABLE_NET=ON
+        ENABLE_NETSSL=ON
+        ENABLE_NETSSL_WIN=OFF
+        ENABLE_CRYPTO=ON
+        ENABLE_DATA=ON
+        ENABLE_DATA_SQLITE=ON
+        ENABLE_DATA_MYSQL=OFF
+        ENABLE_DATA_POSTGRESQL=OFF
+        ENABLE_DATA_ODBC=OFF
+        ENABLE_SEVENZIP=OFF
+        ENABLE_ZIP=ON
+        ENABLE_APACHECONNECTOR=OFF
+        ENABLE_CPPPARSER=OFF
+        ENABLE_POCODOC=OFF
+        ENABLE_PAGECOMPILER=OFF
+        ENABLE_PAGECOMPILER_FILE2PAGE=OFF
+        ENABLE_REDIS=OFF
+        ENABLE_TESTS=OFF
+        ENABLE_SAMPLES=OFF
+        ENABLE_MSVC_MP=OFF
+        FORCE_OPENSSL=OFF
+)
+
+hunter_pick_scheme(DEFAULT url_sha1_cmake)
+hunter_cacheable(Poco)
+hunter_download(PACKAGE_NAME Poco)

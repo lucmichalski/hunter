@@ -22,6 +22,9 @@
 include(hunter_config)
 include(hunter_user_error)
 
+# OpenFrameworks
+hunter_config(Tess2 VERSION 1.0.2)
+
 # Headupintheclouds
 hunter_config(dest VERSION 0.8.0-p2)
 hunter_config(flatbuffers VERSION 1.3.0-p0)
@@ -29,7 +32,7 @@ hunter_config(Autobahn-cpp VERSION 0.2.0-p2)
 
 # Done (Forked+Pre-Release)
 hunter_config(LibMill VERSION 1.12-m2)
-hunter_config(NanoMsg VERSION 1.0.0-m1)
+hunter_config(NanoMsg VERSION 1.0.0-p0)
 hunter_config(Thrift VERSION 0.9.3-m0)
 hunter_config(Thrift-Facebook VERSION 0.31.0-m0)
 hunter_config(GPUImage VERSION 0.1.7-m7)
