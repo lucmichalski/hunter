@@ -19,10 +19,6 @@ hunter_add_version(
     15fc16e85162b5316b0547f3f92b1a2684bab183
     )
 
-hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(jpeg-turbo)
-hunter_download(PACKAGE_NAME jpeg-turbo)
-
 hunter_pick_scheme(DEFAULT url_sha1_autotools)
 #hunter_cacheable(jpeg-turbo)
 hunter_download(

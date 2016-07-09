@@ -19,10 +19,6 @@ hunter_add_version(
     463564d96442c214d21faa28a3ca229962ca086c
     )
 
-hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(LibDill)
-hunter_download(PACKAGE_NAME LibDill)
-
 hunter_pick_scheme(DEFAULT url_sha1_autotools)
 hunter_cacheable(Dill)
 hunter_download(
