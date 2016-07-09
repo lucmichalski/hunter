@@ -15,7 +15,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_fonts_freetype/archive/v2.6.2-p1.tar.gz"
     SHA1
-    d797e30cfa79eb95dc3b67e75fa6d6a3da80d1ae
+    b165b5b3a6f2203cc826918665313325343f828e
 )
 
 hunter_add_version(
