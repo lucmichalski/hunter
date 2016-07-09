@@ -11,6 +11,17 @@ hunter_add_version(
     PACKAGE_NAME
     freetype
     VERSION
+    "2.6.2-p1"
+    URL
+    "https://github.com/ConfusedReality/pkg_fonts_freetype/archive/v2.6.2-p1.tar.gz"
+    SHA1
+    d797e30cfa79eb95dc3b67e75fa6d6a3da80d1ae
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    freetype
+    VERSION
     "2.6.2"
     URL
     "https://github.com/hunter-packages/freetype/archive/v2.6.2-p0.tar.gz"

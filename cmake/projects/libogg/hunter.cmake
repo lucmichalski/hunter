@@ -1,6 +1,9 @@
 include(hunter_add_version)
+include(hunter_cacheable)
+include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_configuration_types)
 
 hunter_add_version(
 	PACKAGE_NAME
@@ -13,7 +16,15 @@ hunter_add_version(
 	646672cabc9eec253c9199a872541e3a182f6062
 )
 
+#hunter_cmake_args(
+#    libogg
+#    CMAKE_ARGS 
+#    MILL_STATIC_LIB=ON
+#    MILL_SHARED_LIB=OFF
+#    MILL_PERFS=OFF
+#    MILL_TESTS=OFF
+#)
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-
+hunter_cacheable(libogg)
 hunter_download(PACKAGE_NAME libogg)
-

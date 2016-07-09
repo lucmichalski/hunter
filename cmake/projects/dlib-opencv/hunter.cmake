@@ -14,19 +14,19 @@ hunter_add_version(
     PACKAGE_NAME
     dlib-opencv
     VERSION
-    "1.1-nonfree-p0"
+    "1.1-nonfree-p6"
     URL
-    "https://github.com/ConfusedReality/pkg_vision_dlib-opencv/archive/v1.1-nonfree-p0.tar.gz"
+    "https://github.com/ConfusedReality/pkg_vision_dlib-opencv/archive/v1.1-nonfree-p6.tar.gz"
     SHA1
-    8cf63c6a3310e8c926ed432998ec0d53dbe272d8
+    5498379bcb6e1760d36416c1a7f76789e089aae2
 )
 
 hunter_cmake_args(
     dlib-opencv
     CMAKE_ARGS 
     BUILD_DUtils=ON
-    BUILD_DUtilsCV=OFF
-    BUILD_DVision=OFF
+    BUILD_DUtilsCV=ON
+    BUILD_DVision=ON
 )
 
 
