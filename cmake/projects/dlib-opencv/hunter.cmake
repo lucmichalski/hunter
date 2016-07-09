@@ -12,26 +12,25 @@ include(hunter_configuration_types)
 
 hunter_add_version(
     PACKAGE_NAME
-    LibMill
+    dlib-opencv
     VERSION
-    "1.12-m2"
+    "1.1-nonfree-p0"
     URL
-    "https://github.com/lucmichalski/libmill/archive/1.12-m2.tar.gz"
+    "https://github.com/ConfusedReality/pkg_vision_dlib-opencv/archive/v1.1-nonfree-p0.tar.gz"
     SHA1
-    c7e4af2e9fd0f0f6b74215d42d8b38e329c40a46
-    )
-
-
-hunter_cmake_args(
-    LibMill
-    CMAKE_ARGS 
-    MILL_STATIC_LIB=ON
-    MILL_SHARED_LIB=OFF
-    MILL_PERFS=OFF
-    MILL_TESTS=OFF
+    8cf63c6a3310e8c926ed432998ec0d53dbe272d8
 )
 
+hunter_cmake_args(
+    dlib-opencv
+    CMAKE_ARGS 
+    BUILD_DUtils=ON
+    BUILD_DUtilsCV=OFF
+    BUILD_DVision=OFF
+)
+
+
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(LibMill)
-hunter_download(PACKAGE_NAME LibMill)
-hunter_configuration_types(LibMill CONFIGURATION_TYPES Release)
+hunter_cacheable(dlib-opencv)
+hunter_download(PACKAGE_NAME dlib-opencv)
+hunter_configuration_types(dlib-opencv CONFIGURATION_TYPES Release)

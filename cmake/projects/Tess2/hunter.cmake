@@ -17,7 +17,7 @@ hunter_add_version(
     URL
     "https://github.com/lucmichalski/libtess2/archive/v1.0.2.tar.gz"
     SHA1
-    5fbf30b486edba72987da87956b5fd5d96a0e8e8
+    600924f20ec4f0d89c72b17bc16bc8ed281f7329
 )
 
 hunter_add_version(

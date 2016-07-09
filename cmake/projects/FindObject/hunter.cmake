@@ -11,22 +11,25 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    LibDill
+    FindObject
     VERSION
-    "0.1.7-m0"
+    "0.6.3-p1"
     URL
-    "https://github.com/lucmichalski/GPUImage/archive/0.1.7-m0.tar.gz"
+    "https://github.com/ConfusedReality/pkg_vision_findobject/archive/0.6.3-p1.tar.gz"
     SHA1
     463564d96442c214d21faa28a3ca229962ca086c
     )
 
 hunter_cmake_args(
-    DillSocks
+    FindObject
     CMAKE_ARGS 
-    LIBDILL_BUILD_EXAMPLES=OFF
-    LIBDILL_BUILD_TESTS=OFF
+    BUILD_SHARED_LIBS=OFF
+    FINDOBJECT_TOOLS=OFF
+    FINDOBJECT_APP=OFF
+    FINDOBJECT_EXAMPLE=OFF
+    FINDOBJECT_DISABLE_DSYM=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(LibDill)
-hunter_download(PACKAGE_NAME LibDill)
+hunter_cacheable(FindObject)
+hunter_download(PACKAGE_NAME FindObject)

@@ -8,11 +8,11 @@ hunter_add_version(
     PACKAGE_NAME
     Poco
     VERSION
-    1.7.3-p0
+    poco-1.7.3-p3
     URL
-    "https://github.com/ConfusedReality/poco/archive/poco-1.7.3-p0.tar.gz"
+    "https://github.com/ConfusedReality/poco/archive/poco-1.7.3-p3.tar.gz"
     SHA1
-    22dcb34d85d2cbf2ce71fd84b28489c99ed112d0
+    89eef63d8af5a4beaefa5b2e4832e4324cc269e7
 )
 
 hunter_cmake_args(
@@ -24,15 +24,11 @@ hunter_cmake_args(
         POCO_MT=OFF
         ENABLE_CPPUNIT=OFF
         ENABLE_MONGODB=OFF
-        ENABLE_NETSSL=OFF
-        ENABLE_CRYPTO=OFF
-        ENABLE_DATA=OFF
         ENABLE_PAGECOMPILER=OFF
         ENABLE_PAGECOMPILER_FILE2PAGE=OFF
         ENABLE_REDIS=OFF
         ENABLE_XML=ON
         ENABLE_JSON=ON
-        ENABLE_MONGODB=OFF
         ENABLE_PDF=OFF
         ENABLE_UTIL=ON
         ENABLE_NET=ON
