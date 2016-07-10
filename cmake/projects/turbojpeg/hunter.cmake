@@ -4,27 +4,27 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    Dill
+    turbojpeg
     VERSION
-    "0.5-beta-p0"
+    "1.5.0-p2"
     URL
-    "https://github.com/ConfusedReality/pkg_concurrency_dill/archive/0.5-beta-p0.tar.gz"
+    "https://github.com/ConfusedReality/pkg_images_libjpeg-turbo/archive/1.5.0-p2.tar.gz"
     SHA1
-    62d1b578c99896bc3680da2a001dcede3a084ac7
+    4eee74a69e5849ea0180e615afb2fbd9462040a2
     )
 
 #hunter_pick_scheme(DEFAULT url_sha1_autotools)
-hunter_pick_scheme(DEFAULT url_sha1_dill_autogen_autotools)
+hunter_pick_scheme(DEFAULT url_sha1_turbojpeg_autogen_autotools)
 
-hunter_cacheable(Dill)
+#hunter_cacheable(turbojpeg)
 hunter_download(
-    PACKAGE_NAME Dill
+    PACKAGE_NAME turbojpeg
 )
 
 

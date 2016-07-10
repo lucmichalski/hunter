@@ -13,11 +13,11 @@ hunter_add_version(
     PACKAGE_NAME
     FindObject
     VERSION
-    "0.6.3-p13"
+    "0.6.3-p14"
     URL
-    "https://github.com/ConfusedReality/pkg_vision_findobject/archive/0.6.3-p13.tar.gz"
+    "https://github.com/ConfusedReality/pkg_vision_findobject/archive/0.6.3-p14.tar.gz"
     SHA1
-    86a4a287a0ddd34fca7d3857b630410be749021f
+    a61bd933e38886afc8d164dcbe92c427db03101a
     )
 
 hunter_cmake_args(

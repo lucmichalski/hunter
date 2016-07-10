@@ -5,25 +5,28 @@
 
 include(hunter_add_version)
 include(hunter_cacheable)
-include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    DillSocks
+    wsock
     VERSION
-    "0.0.1-p0"
+    "1.0.0-p0"
     URL
-    "https://github.com/ConfusedReality/pkg_concurrency_dillsocks/archive/0.0.1-p0.tar.gz"
+    "https://github.com/ConfusedReality/pkg_websocket_wsock/archive/1.0.0-p0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    62d1b578c99896bc3680da2a001dcede3a084ac7
     )
 
 #hunter_pick_scheme(DEFAULT url_sha1_autotools)
-hunter_pick_scheme(DEFAULT url_sha1_dillsocks_autogen_autotools)
+hunter_pick_scheme(DEFAULT url_sha1_wsock_autogen_autotools)
 
-hunter_cacheable(DillSocks)
+hunter_cacheable(wsock)
 hunter_download(
-    PACKAGE_NAME DillSocks
+    PACKAGE_NAME wsock
 )
+
+# PACKAGE_UNRELOCATABLE_TEXT_FILES "lib/pkgconfig/wsock.pc"
+
+

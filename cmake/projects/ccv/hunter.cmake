@@ -9,6 +9,18 @@ include(hunter_download)
 include(hunter_pick_scheme)
 include(hunter_add_package)
 
+
+hunter_add_version(
+    PACKAGE_NAME
+    ccv
+    VERSION
+    "0.7-p7"
+     URL
+     "https://github.com/ConfusedReality/pkg_vision_ccv/archive/0.7-p7.tar.gz"
+     SHA1
+     6fdcc8fe0e31a169a3fb26df7c694873208ccc44
+)
+
 hunter_add_version(
     PACKAGE_NAME
     ccv
