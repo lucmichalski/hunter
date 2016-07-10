@@ -13,6 +13,17 @@ hunter_add_version(
     PACKAGE_NAME
     flatbuffers
     VERSION
+    "1.3.0-p7"
+    URL
+    "https://github.com/ConfusedReality/pkg_serialization_flatbuffers/archive/v1.3.0-p7.tar.gz"
+    SHA1
+    35dfa41c0b4c4d5ab82e04d45f392e6a818454e7
+    )
+
+hunter_add_version(
+    PACKAGE_NAME
+    flatbuffers
+    VERSION
     "1.3.0-p0"
     URL
     "https://github.com/lucmichalski/flatbuffers/archive/v1.3.0-p0.tar.gz"
@@ -36,9 +47,9 @@ hunter_cmake_args(
     CMAKE_ARGS 
     FLATBUFFERS_CODE_COVERAGE=OFF
     FLATBUFFERS_BUILD_TESTS=OFF
-    FLATBUFFERS_INSTALL=OFF
+    FLATBUFFERS_INSTALL=ON
     FLATBUFFERS_BUILD_FLATLIB=ON
-    FLATBUFFERS_BUILD_FLATC=OFF
+    FLATBUFFERS_BUILD_FLATC=ON
     FLATBUFFERS_BUILD_FLATHASH=ON
 )
 

@@ -23,6 +23,8 @@ include(hunter_config)
 include(hunter_user_error)
 
 # Luc Michalski - Additions
+hunter_config(CocosAR VERSION 0.0.1-p1)
+
 hunter_config(Tess2 VERSION 1.0.2)
 hunter_config(Poco VERSION poco-1.7.3-p3)
 hunter_config(dlib-opencv VERSION 1.1-nonfree-p6)
@@ -38,7 +40,7 @@ hunter_config(ogles_gpgpu VERSION 1.0.0-p1)
 
 # Headupintheclouds
 hunter_config(dest VERSION 0.8.0-p2)
-hunter_config(flatbuffers VERSION 1.3.0-p3)
+hunter_config(flatbuffers VERSION 1.3.0-p7)
 hunter_config(Autobahn-cpp VERSION 0.2.0-p2)
 
 # Done (Forked+Pre-Release)
@@ -148,7 +150,7 @@ hunter_config(WinSparkle VERSION 0.4.0)
 hunter_config(ZLIB VERSION 1.2.8-p3)
 hunter_config(ZMQPP VERSION 4.1.2)
 hunter_config(ZeroMQ VERSION 4.1.4-p2)
-hunter_config(ccv VERSION 0.7-p7)
+hunter_config(ccv VERSION 0.7-p8)
 hunter_config(cereal VERSION 1.1.2-p5)
 hunter_config(clBLAS VERSION 2.10.0-p0)
 hunter_config(convertutf VERSION 1.0.1)
