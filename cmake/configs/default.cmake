@@ -28,6 +28,10 @@ hunter_config(fontconfig VERSION 0.0.1-p0)
 hunter_config(Cordova VERSION 0.0.1-p0)
 hunter_config(Vorbis VERSION 0.0.1-p0)
 hunter_config(webp VERSION 0.5.1-p0)
+hunter_config(gstreamer VERSION 1.9.1-p0)
+hunter_config(gst-plugins-bad VERSION 1.9.1-p0)
+hunter_config(gst-plugins-base VERSION 1.9.1-p0)
+hunter_config(gst-plugins-good VERSION 1.9.1-p0)
 
 # Develop
 hunter_config(tinyxml2 VERSION 0.1-develop)

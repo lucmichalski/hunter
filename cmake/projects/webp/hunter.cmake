@@ -18,7 +18,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_images_webp/archive/0.5.1-p0.tar.gz"
     SHA1
-    3e083ca37efc461704d9af256cdf2231cae6ee9d
+    69a1fad092f4429a3fa35c2c2fabc485dc5d82e3
 )
 
 hunter_cmake_args(
