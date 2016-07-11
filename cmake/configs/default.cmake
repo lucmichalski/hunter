@@ -38,11 +38,11 @@ hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
 hunter_config(OpenFace VERSION 0.1-p0)
 hunter_config(CLM VERSION 1.4.0-p0)
 
-
+hunter_config(opencv-thrift VERSION 0.0.1-p0)
 
 # Develop
 hunter_config(tinyxml2 VERSION 0.1-develop)
-hunter_config(CURL VERSION 0.1-develop)
+hunter_config(curl VERSION 7.49.1-p5)
 hunter_config(glfw VERSION 3.1.2-p0)
 hunter_config(gtk VERSION 3.21.3-p0)
 hunter_config(mpg123 VERSION 1.23.6)
@@ -53,7 +53,7 @@ hunter_config(dlib-opencv VERSION 1.1-nonfree-p6)
 hunter_config(NanoMsg VERSION 1.0.0-p6)
 hunter_config(Mill VERSION 1.13-p9)
 hunter_config(Dill VERSION 0.5-beta-p0)
-hunter_config(FindObject VERSION 0.6.3-p15)
+hunter_config(FindObject VERSION 0.6.3-p16)
 hunter_config(turbojpeg VERSION 1.5.0-p2)
 hunter_config(wsock VERSION 1.0.0-p0)
 hunter_config(DillSocks VERSION 0.0.1-p0)

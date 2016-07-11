@@ -34,8 +34,8 @@ hunter_add_version(
 
 hunter_cmake_args(
     GamePlay-deps
-    CMAKE_ARGS 
-    LIBRARY_OUTPUT_PATH="./output"
+    CMAKE_ARGS
+    LIBRARY_OUTPUT_PATH=${PROJECT_SOURCE_DIR}/output
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)

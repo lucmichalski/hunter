@@ -4,6 +4,8 @@ include(hunter_pick_scheme)
 include(hunter_cacheable)
 include(hunter_download)
 
+hunter_add_package(OpenSSL) # GamePlay dependencies
+
 hunter_add_version(
     PACKAGE_NAME
     Poco
@@ -12,7 +14,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/poco/archive/poco-1.7.3-p3.tar.gz"
     SHA1
-    89eef63d8af5a4beaefa5b2e4832e4324cc269e7
+    fe57a54de8b881bcf04435276b87eb23a162f7fd
 )
 
 hunter_cmake_args(
@@ -32,9 +34,9 @@ hunter_cmake_args(
         ENABLE_PDF=OFF
         ENABLE_UTIL=ON
         ENABLE_NET=ON
-        ENABLE_NETSSL=ON
+        ENABLE_NETSSL=OFF
         ENABLE_NETSSL_WIN=OFF
-        ENABLE_CRYPTO=ON
+        ENABLE_CRYPTO=OFF
         ENABLE_DATA=ON
         ENABLE_DATA_SQLITE=ON
         ENABLE_DATA_MYSQL=OFF
@@ -56,4 +58,10 @@ hunter_cmake_args(
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Poco)
-hunter_download(PACKAGE_NAME Poco)
+
+hunter_download(
+    PACKAGE_NAME Poco
+    # Explicit dependencies since LLVM is not hunterized
+    PACKAGE_DEPENDS_ON OpenSSL
+)
+
