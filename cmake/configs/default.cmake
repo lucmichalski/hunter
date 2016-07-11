@@ -175,13 +175,8 @@ hunter_config(Qt VERSION 5.5.1-cvpixelbuffer-2-p7)
 hunter_config(QtAndroidCMake VERSION 1.0.6)
 hunter_config(QtCMakeExtra VERSION 1.0.17)
 hunter_config(QtQmlManager VERSION 1.0.0)
-<<<<<<< HEAD
 hunter_config(RapidJSON VERSION 1.0.2-p2)
 hunter_config(SDL2 VERSION 2.0.4-p2)
-=======
-hunter_config(RapidJSON VERSION 0.11-hunter)
-hunter_config(SQLite VERSION 1.0.0) # Urho3D import
->>>>>>> headupinclouds_hunter/develop.urho3d
 hunter_config(SQLite3 VERSION autoconf-3080803) #R-Tree enabled
 hunter_config(Sober VERSION 0.1.3)
 hunter_config(STB VERSION 1.0.0-p1)
@@ -197,22 +192,21 @@ hunter_config(ZeroMQ VERSION 4.1.4-p2)
 hunter_config(ccv VERSION 0.7-p8)
 hunter_config(cereal VERSION 1.1.2-p5)
 hunter_config(clBLAS VERSION 2.10.0-p0)
-<<<<<<< HEAD
 hunter_config(convertutf VERSION 1.0.1)
-=======
 hunter_config(clipper VERSION 22.0.0-p0)
-hunter_config(convertutf VERSION 1.0.0)
->>>>>>> headupinclouds_hunter/develop.urho3d
+
 hunter_config(cvmatio VERSION 1.0.26)
 hunter_config(damageproto VERSION 1.2.1)
 hunter_config(dbus VERSION 1.10.0-hunter-4)
-hunter_config(dlib VERSION 18.14-p1)
+hunter_config(dest VERSION 0.8.0-p2)
+
 hunter_config(dri2proto VERSION 2.8)
 hunter_config(dri3proto VERSION 1.0)
 hunter_config(drm VERSION 2.4.67)
 hunter_config(fixesproto VERSION 5.0)
 hunter_config(fmt VERSION 3.0.0)
 hunter_config(freetype VERSION 2.6.2-p1)
+
 hunter_config(geos VERSION 3.4.2)
 hunter_config(glog VERSION 0.3.4-p1)
 hunter_config(glproto VERSION 1.4.17)
@@ -240,16 +234,10 @@ hunter_config(odb-compiler VERSION 2.4.0)
 hunter_config(odb-mysql VERSION 2.4.0)
 hunter_config(odb-pgsql VERSION 2.4.0)
 hunter_config(odb-sqlite VERSION 2.4.0)
-<<<<<<< HEAD
 hunter_config(openddlparser VERSION 0.1.0-p2)
 hunter_config(pciaccess VERSION 0.13.4)
 hunter_config(poly2tri VERSION 1.0.0)
 hunter_config(polyclipping VERSION 4.8.8-p0) # for Assimp
-=======
-hunter_config(openddlparser VERSION 0.1.0)
-hunter_config(pciaccess VERSION 0.13.4)
-hunter_config(poly2tri VERSION 1.0.0)
->>>>>>> headupinclouds_hunter/develop.urho3d
 hunter_config(presentproto VERSION 1.0)
 hunter_config(pthread-stubs VERSION 0.3)
 hunter_config(rabbitmq-c VERSION 0.7.0-p1)
@@ -259,6 +247,7 @@ hunter_config(sparsehash VERSION 2.0.2)
 hunter_config(spdlog VERSION 1.0.0-p0)
 hunter_config(szip VERSION 2.1.0-p1)
 hunter_config(websocketpp VERSION 0.7.0-p2)
+hunter_config(thread-pool-cpp VERSION 1.0.0)
 hunter_config(wxWidgets VERSION 3.0.2)
 hunter_config(x11 VERSION 1.5.0)
 hunter_config(xau VERSION 1.0.7)
