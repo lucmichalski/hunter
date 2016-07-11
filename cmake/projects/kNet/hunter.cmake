@@ -1,3 +1,6 @@
+# Copyright (c) 2016, Ruslan Baratov
+# All rights reserved.
+
 # Added by Luc Michalski - 2016
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!

@@ -22,3 +22,5 @@ hunter_add_version(
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(LibCpuId)
 hunter_download(PACKAGE_NAME LibCpuId)
+
+

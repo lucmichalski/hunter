@@ -38,3 +38,4 @@ hunter_add_version(
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(irrXML)
 hunter_download(PACKAGE_NAME irrXML)
+
