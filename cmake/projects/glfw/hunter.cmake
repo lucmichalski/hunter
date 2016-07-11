@@ -1,5 +1,4 @@
-# Copyright (c) 2016, Ruslan Baratov
-# All rights reserved.
+# Added/Modified by Luc Michalski
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
@@ -27,7 +26,7 @@ hunter_cmake_args(
     GLFW_BUILD_EXAMPLES=OFF
     GLFW_BUILD_TESTS=OFF
     GLFW_BUILD_DOCS=OFF
-    GLFW_INSTALL=OFF
+    GLFW_INSTALL=ON
     GLFW_DOCUMENT_INTERNALS=OFF
 )
 
