@@ -45,6 +45,4 @@ hunter_download(
     PACKAGE_NAME curl
 )
 
-hunter_configuration_types(curl CONFIGURATION_TYPES Release)
-
 

@@ -38,6 +38,7 @@ hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
 hunter_config(OpenFace VERSION 0.1-p0)
 hunter_config(CLM VERSION 1.4.0-p0)
 
+hunter_config(libwebrtc VERSION 0.0.1-p0)
 hunter_config(opencv-thrift VERSION 0.0.1-p0)
 
 # Develop

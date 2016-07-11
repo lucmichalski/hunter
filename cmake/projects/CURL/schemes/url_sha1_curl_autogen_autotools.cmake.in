@@ -44,9 +44,9 @@ foreach(build_config_type @HUNTER_PACKAGE_CONFIGURATION_TYPES@)
 
     set(current_project "@HUNTER_EP_NAME@${build_config_type}")
 
-    hunter_autotools_project("${current_project}"
+    hunter_autotools_project("@HUNTER_EP_NAME@"
         HUNTER_SELF
-        "@HUNTER_SELF@"
+          "@HUNTER_SELF@"
         URL
         @HUNTER_PACKAGE_URL@
         URL_HASH
@@ -62,11 +62,10 @@ foreach(build_config_type @HUNTER_PACKAGE_CONFIGURATION_TYPES@)
         GLOBAL_INSTALL_DIR
         "@HUNTER_INSTALL_PREFIX@"
         PARALLEL_JOBS
-        "@HUNTER_JOBS_OPTION@"
+        "1"
         BOOTSTRAP
         "./autogen.sh"
         EXTRA_FLAGS
-        --disable-soname-versions
     )
 
     # Rename the libraries, needed in the case we have
