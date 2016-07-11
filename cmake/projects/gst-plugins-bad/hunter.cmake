@@ -3,9 +3,21 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+
+## Warning, it is a staging package tarball, check twice the version that was attributed
+hunter_add_version(
+    PACKAGE_NAME
+    gst-plugins-bad
+    VERSION
+    "0.0.1-develop"
+    URL
+    "http://localhost:1979/staging/pkg_multimedia_gst-plugins-bad-526b32d.tar.gz"
+    SHA1
+    78bb70a62de70a406e52ae3cd303911b66a917dc
+    )
 
 hunter_add_version(
     PACKAGE_NAME
@@ -20,7 +32,8 @@ hunter_add_version(
 
 hunter_pick_scheme(DEFAULT url_sha1_gst-plugins-bad_autogen_autotools)
 
-hunter_cacheable(gst-plugins-bad)
+#hunter_cacheable(gst-plugins-bad)
+
 hunter_download(
     PACKAGE_NAME gst-plugins-bad
 )

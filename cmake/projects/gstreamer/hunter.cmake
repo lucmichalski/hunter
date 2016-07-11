@@ -4,9 +4,21 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+
+## Warning, it is a staging package tarball, check twice the version that was attributed
+hunter_add_version(
+    PACKAGE_NAME
+    gstreamer
+    VERSION
+    "0.0.1-develop"
+    URL
+    "http://localhost:1979/staging/pkg_multimedia_gstreamer-db0b533.tar.gz"
+    SHA1
+    6b8d9a19ca63ab3afa534fc96c3218847ee759b4
+    )
 
 hunter_add_version(
     PACKAGE_NAME
@@ -21,7 +33,8 @@ hunter_add_version(
 
 hunter_pick_scheme(DEFAULT url_sha1_gstreamer_autogen_autotools)
 
-hunter_cacheable(gstreamer)
+#hunter_cacheable(gstreamer)
+
 hunter_download(
     PACKAGE_NAME gstreamer
 )

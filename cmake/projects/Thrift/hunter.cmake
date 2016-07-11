@@ -10,13 +10,25 @@ include(hunter_pick_scheme)
 
 hunter_add_package(ZLIB)
 
+## Warning, it is a staging package tarball, check twice the version that was attributed
 hunter_add_version(
     PACKAGE_NAME
     Thrift
     VERSION
-    "0.9.3-m0"
+    "0.0.1-develop"
     URL
-    "https://github.com/lucmichalski/thrift/archive/0.9.3-m0.tar.gz"
+    "http://localhost:1979/staging/pkg_serialization_thrift-db0b533.tar.gz"
+    SHA1
+    78bb70a62de70a406e52ae3cd303911b66a917dc
+    )
+
+hunter_add_version(
+    PACKAGE_NAME
+    Thrift
+    VERSION
+    "0.9.3-p0"
+    URL
+    "https://github.com/ConfusedReality/pkg_serialization_thrift/archive/0.9.3-p0.tar.gz"
     SHA1
     773c348b6ed83c8c73ad2fef51a23cbe09d7c43a
     )

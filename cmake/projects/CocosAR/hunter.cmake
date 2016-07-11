@@ -4,7 +4,7 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
@@ -21,6 +21,18 @@ hunter_add_package(StanHull) # StanHull
 hunter_add_package(libogg) # libogg
 hunter_add_package(minizip) # minizip
 hunter_add_package(Curl) # Curl
+
+## Warning, it is a staging package tarball, check twice the version that was attributed
+hunter_add_version(
+    PACKAGE_NAME
+    CocosAR
+    VERSION
+    "0.0.1-develop"
+    URL
+    "http://localhost:1979/staging/pkg_augmentedreality_CocosAR-db0b533.tar.gz"
+    SHA1
+    78bb70a62de70a406e52ae3cd303911b66a917dc
+    )
 
 hunter_add_version(
     PACKAGE_NAME
@@ -44,11 +56,12 @@ hunter_cmake_args(
 
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(CocosAR)
+
+#hunter_cacheable(CocosAR)
+
 hunter_download(
     PACKAGE_NAME CocosAR
     # Explicit dependencies since LLVM is not hunterized
     PACKAGE_DEPENDS_ON Zlib flatbuffers Recast SDL2 TIFF PNG poly2tri StanHull libogg minizip Curl
 )
 
-#hunter_configuration_types(CocosAR CONFIGURATION_TYPES Release)

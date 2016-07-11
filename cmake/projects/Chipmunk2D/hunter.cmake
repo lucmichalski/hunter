@@ -4,10 +4,22 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
 include(hunter_cmake_args)
+
+## Warning, it is a staging package tarball, check twice the version that was attributed
+hunter_add_version(
+    PACKAGE_NAME
+    Chipmunk2D
+    VERSION
+    "0.0.1-develop"
+    URL
+    "http://localhost:1979/staging/pkg_game-engine_Chipmunk2D-db0b533.tar.gz"
+    SHA1
+    78bb70a62de70a406e52ae3cd303911b66a917dc
+    )
 
 hunter_add_version(
     PACKAGE_NAME
@@ -31,5 +43,8 @@ hunter_cmake_args(
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(Chipmunk2D)
+
+#hunter_cacheable(Chipmunk2D)
+
 hunter_download(PACKAGE_NAME Chipmunk2D)
+

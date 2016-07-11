@@ -32,9 +32,13 @@ hunter_config(gstreamer VERSION 1.9.1-p0)
 hunter_config(gst-plugins-bad VERSION 1.9.1-p0)
 hunter_config(gst-plugins-base VERSION 1.9.1-p0)
 hunter_config(gst-plugins-good VERSION 1.9.1-p0)
-hunter_config(GamePlay VERSION 3.0.0-p0)
-hunter_config(GamePlay-deps VERSION 3.0.0-p1)
+hunter_config(GamePlay VERSION 3.0.0-p2)
+hunter_config(GamePlay-deps VERSION 0.0.2-develop)
 hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
+hunter_config(OpenFace VERSION 0.1-p0)
+hunter_config(CLM VERSION 1.4.0-p0)
+
+
 
 # Develop
 hunter_config(tinyxml2 VERSION 0.1-develop)
@@ -63,8 +67,8 @@ hunter_config(Autobahn-cpp VERSION 0.2.0-p2)
 
 # Done (Forked+Pre-Release)
 
-hunter_config(Thrift VERSION 0.9.3-m0)
-hunter_config(Thrift-Facebook VERSION 0.31.0-m0)
+hunter_config(Thrift VERSION 0.9.3-p0)
+hunter_config(Thrift-Facebook VERSION 0.31.0-p0)
 hunter_config(GPUImage VERSION 0.1.7-m7)
 
 hunter_config(Urho3D VERSION 1.32-m0)
