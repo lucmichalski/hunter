@@ -26,7 +26,7 @@ include(hunter_user_error)
 hunter_config(CocosAR VERSION 0.0.1-p2)
 hunter_config(tinyxml2 VERSION 3.0.0-p5)
 hunter_config(fontconfig VERSION 0.0.1-p0)
-hunter_config(Curl VERSION 7.49.1-p0)
+hunter_config(CURL VERSION develop)
 
 
 hunter_config(Tess2 VERSION 1.0.2)
