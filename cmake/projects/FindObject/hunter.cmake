@@ -17,7 +17,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_vision_findobject/archive/0.6.3-p14.tar.gz"
     SHA1
-    a61bd933e38886afc8d164dcbe92c427db03101a
+    5e45f2e5a41ce27b42dc624332f4b1354f49a786
     )
 
 hunter_cmake_args(

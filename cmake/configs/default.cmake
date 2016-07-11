@@ -23,7 +23,11 @@ include(hunter_config)
 include(hunter_user_error)
 
 # Luc Michalski - Additions
-hunter_config(CocosAR VERSION 0.0.1-p1)
+hunter_config(CocosAR VERSION 0.0.1-p2)
+hunter_config(tinyxml2 VERSION 3.0.0-p5)
+hunter_config(fontconfig VERSION 0.0.1-p0)
+hunter_config(Curl VERSION 7.49.1-p0)
+
 
 hunter_config(Tess2 VERSION 1.0.2)
 hunter_config(Poco VERSION poco-1.7.3-p3)
@@ -31,7 +35,7 @@ hunter_config(dlib-opencv VERSION 1.1-nonfree-p6)
 hunter_config(NanoMsg VERSION 1.0.0-p6)
 hunter_config(Mill VERSION 1.13-p9)
 hunter_config(Dill VERSION 0.5-beta-p0)
-hunter_config(FindObject VERSION 0.6.3-p14)
+hunter_config(FindObject VERSION 0.6.3-p15)
 hunter_config(turbojpeg VERSION 1.5.0-p2)
 hunter_config(wsock VERSION 1.0.0-p0)
 hunter_config(DillSocks VERSION 0.0.1-p0)
