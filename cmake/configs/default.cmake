@@ -24,10 +24,12 @@ include(hunter_user_error)
 
 # Luc Michalski - Additions
 hunter_config(CocosAR VERSION 0.0.1-p2)
-hunter_config(tinyxml2 VERSION 3.0.0-p5)
 hunter_config(fontconfig VERSION 0.0.1-p0)
-hunter_config(CURL VERSION develop)
 
+# Develop
+hunter_config(tinyxml2 VERSION 0.1-develop)
+hunter_config(CURL VERSION 0.1-develop)
+hunter_config(glfw VERSION 3.1.2-p0)
 
 hunter_config(Tess2 VERSION 1.0.2)
 hunter_config(Poco VERSION poco-1.7.3-p3)

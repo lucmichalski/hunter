@@ -4,6 +4,19 @@ include(hunter_pick_scheme)
 include(hunter_cacheable)
 include(hunter_download)
 
+# For hunterization purpose only
+# Be careful with the local tarball approach and the real version of your package
+hunter_add_version(
+    PACKAGE_NAME
+    CURL
+    VERSION
+    0.0-develop
+    URL
+    "http://localhost:1979/staging/pkg_network_poco.tar.gz"
+    SHA1
+    0cf48cb662a006422fcb04d260817e1dea498c3b
+)
+
 hunter_add_version(
     PACKAGE_NAME
     PocoCpp

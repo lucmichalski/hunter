@@ -4,6 +4,19 @@ include(hunter_pick_scheme)
 include(hunter_cacheable)
 include(hunter_download)
 
+# For hunterization purpose only
+# Be careful with the local tarball approach and the real version of your package
+hunter_add_version(
+    PACKAGE_NAME
+    CURL
+    VERSION
+    0.1-develop
+    URL
+    "http://localhost:1979/staging/pkg_parser_tinyxml2-27ba253.tar.gz"
+    SHA1
+    f265c6306e0fa2c1a249115dec050d38e5b2854d
+)
+
 hunter_add_version(
     PACKAGE_NAME
     tinyxml2

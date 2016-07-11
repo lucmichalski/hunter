@@ -19,7 +19,6 @@ hunter_add_version(
     62d1b578c99896bc3680da2a001dcede3a084ac7
     )
 
-#hunter_pick_scheme(DEFAULT url_sha1_autotools)
 hunter_pick_scheme(DEFAULT url_sha1_dill_autogen_autotools)
 
 hunter_cacheable(Dill)
