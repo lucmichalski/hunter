@@ -15,7 +15,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_multimedia_gst-plugins-base/archive/1.9.1-p0.tar.gz"
     SHA1
-    10a2377509d4edf8be0328727361e79610250182
+    0ddcd9086556a30b24f0112949f731a8ea64dd54
     )
 
 hunter_pick_scheme(DEFAULT url_sha1_gst-plugins-base_autogen_autotools)

@@ -16,10 +16,10 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_multimedia_gstreamer/archive/1.9.1-p0.tar.gz"
     SHA1
-    10a2377509d4edf8be0328727361e79610250182
+    871fa8b184f91038a5b5875467f25415fa678d05
     )
 
-hunter_pick_scheme(DEFAULT url_sha1_vorbis_autogen_autotools)
+hunter_pick_scheme(DEFAULT url_sha1_gstreamer_autogen_autotools)
 
 hunter_cacheable(gstreamer)
 hunter_download(

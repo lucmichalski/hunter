@@ -50,4 +50,5 @@ hunter_download(
     # Explicit dependencies since LLVM is not hunterized
     PACKAGE_DEPENDS_ON Zlib flatbuffers Recast SDL2 TIFF PNG poly2tri StanHull libogg minizip Curl
 )
-hunter_configuration_types(CocosAR CONFIGURATION_TYPES Release)
+
+#hunter_configuration_types(CocosAR CONFIGURATION_TYPES Release)

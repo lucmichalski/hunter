@@ -32,6 +32,9 @@ hunter_config(gstreamer VERSION 1.9.1-p0)
 hunter_config(gst-plugins-bad VERSION 1.9.1-p0)
 hunter_config(gst-plugins-base VERSION 1.9.1-p0)
 hunter_config(gst-plugins-good VERSION 1.9.1-p0)
+hunter_config(GamePlay VERSION 3.0.0-p0)
+hunter_config(GamePlay-deps VERSION 3.0.0-p1)
+hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
 
 # Develop
 hunter_config(tinyxml2 VERSION 0.1-develop)
