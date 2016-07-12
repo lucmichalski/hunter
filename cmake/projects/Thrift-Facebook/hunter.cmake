@@ -28,7 +28,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_serialization_fbthrift/archive/0.31.0-p0.tar.gz"
     SHA1
-    463564d96442c214d21faa28a3ca229962ca086c
+    9b0a4d6ec99ba3d95cd076f0583d945fdf11e173
     )
 
 hunter_cmake_args(

@@ -34,9 +34,9 @@ hunter_cmake_args(
         ENABLE_PDF=OFF
         ENABLE_UTIL=ON
         ENABLE_NET=ON
-        ENABLE_NETSSL=OFF
+        ENABLE_NETSSL=ON
         ENABLE_NETSSL_WIN=OFF
-        ENABLE_CRYPTO=OFF
+        ENABLE_CRYPTO=ON
         ENABLE_DATA=ON
         ENABLE_DATA_SQLITE=ON
         ENABLE_DATA_MYSQL=OFF

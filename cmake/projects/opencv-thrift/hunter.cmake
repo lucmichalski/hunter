@@ -28,7 +28,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_vision_opencv-thrift/archive/0.0.1-p0.tar.gz"
     SHA1
-    20ea56830039ae2c082711c73602c82cce6118d5
+    981febf84832dfe3faf21e490f264e3b01038f1b
     )
 
 hunter_cmake_args(

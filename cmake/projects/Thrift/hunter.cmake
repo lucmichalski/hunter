@@ -30,7 +30,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_serialization_thrift/archive/0.9.3-p0.tar.gz"
     SHA1
-    773c348b6ed83c8c73ad2fef51a23cbe09d7c43a
+    bbe7d3b2fb98420748b7158bcf4460d6ee9901b5
     )
 
 hunter_cmake_args(

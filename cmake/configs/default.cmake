@@ -37,6 +37,13 @@ hunter_config(GamePlay-deps VERSION 0.0.2-develop)
 hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
 hunter_config(OpenFace VERSION 0.1-p0)
 hunter_config(CLM VERSION 1.4.0-p0)
+    
+hunter_config(cpp-restify VERSION 0.0.1-p0)
+hunter_config(CryEngine VERSION 5.1.1-p0)
+hunter_config(ARToolKit5 VERSION 5.3.2R1-p0)
+hunter_config(mxnet VERSION 0.7.0-p0)
+
+hunter_config(Cryptopp VERSION 5.6.3-p0)
 
 hunter_config(libwebrtc VERSION 0.0.1-p0)
 hunter_config(opencv-thrift VERSION 0.0.1-p0)
@@ -105,8 +112,8 @@ hunter_config(LZ4 VERSION 1.0.0-p2)
 
 # To do
 hunter_config(Thrift-Asio VERSION 0.9.3-m0)
-hunter_config(Thrift-Facebook VERSION 0.1-p0)
 hunter_config(DillSocks VERSION 0.1-p0)
+hunter_config(ARToolKit5 VERSION 5.3.2R1-p0)
 
 # NOTE: no names with spaces!
 

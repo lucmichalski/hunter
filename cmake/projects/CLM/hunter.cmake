@@ -11,8 +11,12 @@ include(hunter_pick_scheme)
 include(hunter_configuration_types)
 
 hunter_add_package(Boost) # Boost
+hunter_add_package(PNG) # PNG
+hunter_add_package(JPEG) # JPEG
+hunter_add_package(TIFF) # TIFF
+
 hunter_add_package(OpenCV) # OpenCV
-hunter_add_package(dlib) # dlib
+#hunter_add_package(dlib) # dlib
 
 ## Warning, it is a staging package tarball, check twice the version that was attributed
 hunter_add_version(
@@ -53,6 +57,6 @@ hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_download(
     PACKAGE_NAME CLM
     # Explicit dependencies since LLVM is not hunterized
-    PACKAGE_DEPENDS_ON Boost dlib OpenCV Boost 
+    PACKAGE_DEPENDS_ON Boost PNG JPEG TIFF OpenCV 
 )
 
