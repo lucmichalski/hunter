@@ -11,9 +11,9 @@ hunter_add_version(
     PACKAGE_NAME
     Annoy
     VERSION
-    "0.0.3-hunter"
+    "0.0.1-p0"
     URL
-    "https://github.com/hunter-packages/asyncplusplus/archive/v0.0.3-hunter.tar.gz"
+    "https://github.com/ConfusedReality/annoy/archive/0.0.1-p0.tar.gz"
     SHA1
     1d3cfdde4b18547eace113cdf7ac670fb6a2c420
 )

@@ -38,6 +38,18 @@ hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
 hunter_config(OpenFace VERSION 0.1-p0)
 hunter_config(CLM VERSION 1.4.0-p0)
     
+hunter_config(Annoy VERSION 0.0.1-p0)    
+hunter_config(Golang VERSION 1.6.2)
+
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+#hunter_config(Annoy VERSION 0.0.1-p0)
+
 hunter_config(cpp-restify VERSION 0.0.1-p0)
 hunter_config(CryEngine VERSION 5.1.1-p0)
 hunter_config(ARToolKit5 VERSION 5.3.2R1-p0)
