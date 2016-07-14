@@ -1,48 +1,56 @@
-## Added/Modified by Luc Michalski - 2016
+# Copyright (c) 2015, David Hirvonen
+# All rights reserved.
 
-#include(hunter_cacheable)
+# !!! DO NOT PLACE HEADER GUARDS HERE !!!
+
+# Load used modules
+
+
+
 include(hunter_add_version)
+include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
-include(hunter_configuration_types)
 
-# hunter_add_package(Zlib) # Zlib
-# hunter_add_package(OpenSSL) # OpenSSL
 
-# For hunterization purpose only
-# Be careful with the local tarball approach and the real version of your package
-hunter_add_version(
-    PACKAGE_NAME
-    curl
-    VERSION
-    0.2-develop
-    URL
-    "http://localhost:1979/staging/pkg_network_curl-16dfb41.tar.gz"
-    SHA1
-    7af37ed7c768364b5dc78b6a982a5ec4168e77aa
-)
+hunter_add_package(OpenSSL)
+hunter_add_package(ZLIB)
+hunter_add_package(LibSSH2)
+# List of versions here...
 
 hunter_add_version(
     PACKAGE_NAME
-    curl
+    CURL
     VERSION
-    7.49.1-p5
+    "7.49.1-DEV"
     URL
-    "https://github.com/ConfusedReality/curl/archive/7.49.1-p5.tar.gz"
+    "https://github.com/hunter-packages/curl/archive/hunter-7.49.1-v0.zip"
     SHA1
-    c930e758c27e3124da33f5561a8928a88c4c383a
-)
-
-#if(MSVC)
-#    hunter_pick_scheme(DEFAULT url_sha1_curl_autogen_autotools)
-#else()
-    hunter_pick_scheme(DEFAULT url_sha1_curl_autogen_autotools)
-#endif()
-
-#hunter_cacheable(curl)
-
-hunter_download(
-    PACKAGE_NAME curl
+    fd72a153ca60fe85b57a2ac4eadedcfb38c3066d
 )
 
 
+if(BUILD_SHARED_LIBS)
+    SET(BUILD_CURL_STATIC OFF)
+else()
+    SET(BUILD_CURL_STATIC ON)
+endif()
+
+
+hunter_cmake_args(
+    CURL
+    CMAKE_ARGS
+        BUILD_CURL_TESTS=OFF
+        BUILD_CURL_EXE=OFF
+        CMAKE_USE_OPENSSL=ON
+        CMAKE_USE_LIBSSH2=ON
+        CURL_STATICLIB=${BUILD_CURL_STATIC}
+ )
+
+
+
+# Pick a download scheme
+hunter_pick_scheme(DEFAULT url_sha1_cmake)
+hunter_cacheable(CURL)
+hunter_download(PACKAGE_NAME CURL
+PACKAGE_DEPENDS_ON OpenSSL ZLIB LibSSH2)
