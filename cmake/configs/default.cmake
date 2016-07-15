@@ -22,6 +22,10 @@
 include(hunter_config)
 include(hunter_user_error)
 
+hunter_config(caffe VERSION 0.0.1-p0)
+hunter_config(caffe2 VERSION 0.0.1-p0)
+hunter_config(deepdetect VERSION 0.0.1-p0)
+
 # Luc Michalski - Additions
 hunter_config(CocosAR VERSION 0.0.1-p2)
 hunter_config(fontconfig VERSION 0.0.1-p0)

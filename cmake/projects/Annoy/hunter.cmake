@@ -13,7 +13,7 @@ hunter_add_version(
     VERSION
     "0.0.1-p0"
     URL
-    "https://github.com/ConfusedReality/annoy/archive/0.0.1-p0.tar.gz"
+    "https://github.com/ConfusedReality/pkg_ann_annoy/archive/0.0.1-p0.tar.gz"
     SHA1
     1d3cfdde4b18547eace113cdf7ac670fb6a2c420
 )

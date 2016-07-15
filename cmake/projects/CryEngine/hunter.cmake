@@ -14,6 +14,18 @@ hunter_add_version(
     PACKAGE_NAME
     CryEngine
     VERSION
+    "5.1.1-p1"
+    URL
+    "https://github.com/ConfusedReality/pkg_game-engine_cryengine/archive/5.1.1-p1.tar.gz"
+    SHA1
+    53a467434283d14986fb61f6d8b44ec7c323e9d6
+    )
+
+
+hunter_add_version(
+    PACKAGE_NAME
+    CryEngine
+    VERSION
     "5.1.1-p0"
     URL
     "https://github.com/ConfusedReality/pkg_game-engine_cryengine/archive/5.1.1-p0.tar.gz"
