@@ -16,7 +16,7 @@ hunter_add_version(
     URL
     https://github.com/ConfusedReality/pkg_multithreading_thread-pool-cpp/archive/v1.0.0-p1.tar.gz
     SHA1
-    c004962159c59637985bccc6933499344904feed    
+    7a8c6af33fba062fbfe206498115e94e6da7b1a8    
 )
 
 hunter_add_version(
