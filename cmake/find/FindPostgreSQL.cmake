@@ -209,4 +209,3 @@ if(PostgreSQL_FOUND)
 endif()
 
 mark_as_advanced(PostgreSQL_INCLUDE_DIR PostgreSQL_TYPE_INCLUDE_DIR PostgreSQL_LIBRARY )
-

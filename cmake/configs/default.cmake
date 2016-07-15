@@ -40,6 +40,7 @@ hunter_config(CLM VERSION 1.4.0-p0)
     
 hunter_config(Annoy VERSION 0.0.1-p0)    
 hunter_config(Golang VERSION 1.6.2)
+hunter_config(Lepton VERSION 1.0.0-p0)
 
 #hunter_config(Annoy VERSION 0.0.1-p0)
 #hunter_config(Annoy VERSION 0.0.1-p0)

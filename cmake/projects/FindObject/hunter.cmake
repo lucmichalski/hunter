@@ -9,6 +9,8 @@ include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
 
+hunter_add_package(ZLIB)
+
 hunter_add_version(
     PACKAGE_NAME
     FindObject
@@ -43,4 +45,7 @@ hunter_cmake_args(
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(FindObject)
-hunter_download(PACKAGE_NAME FindObject)
+hunter_download(PACKAGE_NAME FindObject
+                PACKAGE_DEPENDS_ON ZLIB)
+
+#hunter_download(PACKAGE_NAME FindObject)

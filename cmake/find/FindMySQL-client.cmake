@@ -44,4 +44,3 @@ elseif(MYSQL-CLIENT_FIND_REQUIRED)
 else()
   set(MYSQL-CLIENT_FOUND FALSE)
 endif()
-
