@@ -30,6 +30,8 @@ hunter_config(XGBoost VERSION 0.40-p0)
 hunter_config(swiftpp VERSION 0.0.1-p0)
 hunter_config(tapkee VERSION 1.0-p0)
 hunter_config(osrm VERSION 5.3.0-rc.3-p0)
+hunter_config(utfcpp VERSION 2.3.4-p0)
+hunter_config(curlpp VERSION 0.7.3-p0)
 
 # Luc Michalski - Additions
 hunter_config(CocosAR VERSION 0.0.1-p2)

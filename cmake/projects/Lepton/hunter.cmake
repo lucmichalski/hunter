@@ -1,4 +1,4 @@
-# Copyright (c) 2016, Ruslan Baratov, David Hirvonen
+# Copyright (c) 2016, Ruslan Baratov, Luc Michalski
 # All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
@@ -23,6 +23,7 @@ hunter_add_version(
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Lepton)
+
 #hunter_download(PACKAGE_NAME Lepton)
 
 hunter_download(PACKAGE_NAME Lepton
