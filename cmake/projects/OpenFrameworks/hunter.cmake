@@ -32,6 +32,16 @@ hunter_add_version(
     f0646ec626cc7eab482566c7783071860f469f16
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    OpenFrameworks
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_vision_OpenFace/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)    
 
 hunter_pick_scheme(DEFAULT url_sha1_unpack)
 hunter_download(PACKAGE_NAME OpenFrameworks)

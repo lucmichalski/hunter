@@ -21,6 +21,17 @@ hunter_add_version(
     26a7a84cf4b47545d50a71293efab6742bf9d888
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Cryptopp
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_security_cryptopp/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     Cryptopp
     CMAKE_ARGS 

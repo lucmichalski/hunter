@@ -32,6 +32,17 @@ hunter_add_version(
     240af314702a3f6562d0368dfba0cb98f1994a63
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Chipmunk2D
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_game-engine_Chipmunk2D/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     Chipmunk2D
     CMAKE_ARGS 

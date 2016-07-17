@@ -20,6 +20,17 @@ hunter_add_version(
     463564d96442c214d21faa28a3ca229962ca086c
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    DillSocks
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_concurrency_dillsocks/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 #hunter_pick_scheme(DEFAULT url_sha1_autotools)
 hunter_pick_scheme(DEFAULT url_sha1_dillsocks_autogen_autotools)
 

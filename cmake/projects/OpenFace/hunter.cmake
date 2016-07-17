@@ -37,6 +37,17 @@ hunter_add_version(
     57f90778a9bb7b95a7fd73910fd41894f3ee9cab
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    OpenFace
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_vision_OpenFace/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)    
+
 #hunter_cmake_args(
 #    OpenFace
 #    CMAKE_ARGS 

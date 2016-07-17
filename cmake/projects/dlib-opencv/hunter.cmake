@@ -25,6 +25,17 @@ hunter_add_version(
     5498379bcb6e1760d36416c1a7f76789e089aae2
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    dlib-opencv
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_vision_dlib-opencv/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     dlib-opencv
     CMAKE_ARGS 

@@ -33,6 +33,17 @@ hunter_add_version(
      6fdcc8fe0e31a169a3fb26df7c694873208ccc44
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    ccv
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_vision_ccv/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     ccv
     CMAKE_ARGS 

@@ -4,7 +4,7 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
 
@@ -19,6 +19,17 @@ hunter_add_version(
     4815e072b8abaf3837c6a218e522f92997751143
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    ARToolKit5
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_augmented-reality_artoolkit5/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_pick_scheme(
     DEFAULT
     url_sha1_artoolkit5
@@ -28,5 +39,5 @@ hunter_pick_scheme(
     url_sha1_artoolkit5_windows
 )
 
-hunter_cacheable(ARToolKit5)
+#hunter_cacheable(ARToolKit5)
 hunter_download(PACKAGE_NAME ARToolKit5)

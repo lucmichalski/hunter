@@ -32,6 +32,17 @@ hunter_add_version(
     8c56d3a3ed9bdb36fce429f76d7007f012c6b3fd
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    GamePlay-deps
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_game-engine_gameplay-deps/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     GamePlay-deps
     CMAKE_ARGS

@@ -21,6 +21,17 @@ hunter_add_version(
     80402947928caa5a5e9415b444c2e0135dbf9d4a
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    cpp-restify
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_network_cpp-restify/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     cpp-restify
     CMAKE_ARGS 

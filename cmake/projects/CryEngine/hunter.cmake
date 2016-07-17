@@ -33,6 +33,17 @@ hunter_add_version(
     53a467434283d14986fb61f6d8b44ec7c323e9d6
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    CryEngine
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_game-engine_cryengine/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     CryEngine
     CMAKE_ARGS 

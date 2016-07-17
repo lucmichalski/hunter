@@ -21,6 +21,17 @@ hunter_add_version(
     fcd6777d6139e5135bb8c01157e115c7ebd3dc64
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    curlpp
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_network_curlpp/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     curlpp
     CMAKE_ARGS 

@@ -17,6 +17,17 @@ hunter_add_version(
     fe57a54de8b881bcf04435276b87eb23a162f7fd
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Poco
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_network_poco/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)  
+
 hunter_cmake_args(
     Poco
     CMAKE_ARGS

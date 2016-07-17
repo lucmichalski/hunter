@@ -36,6 +36,16 @@ hunter_add_version(
     4b761dacf480b2dafab02f7f50060bc6c9e78dc7
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    deepdetect
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_vision-cnn_deepdetect/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
 
 hunter_cmake_args(
     deepdetect

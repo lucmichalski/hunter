@@ -23,6 +23,17 @@ hunter_add_version(
     b34e7a087513b579368927642e576722cbe067e8
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Aruco
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_augmented-reality_aruco/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     Aruco
     CMAKE_ARGS 

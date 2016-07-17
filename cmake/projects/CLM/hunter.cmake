@@ -41,6 +41,17 @@ hunter_add_version(
     57f90778a9bb7b95a7fd73910fd41894f3ee9cab
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    CLM
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_vision_CLM-framework/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 #hunter_cmake_args(
 #    CLM
 #    CMAKE_ARGS 

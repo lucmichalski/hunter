@@ -34,6 +34,17 @@ hunter_add_version(
     c6fbf99b802350ef801227a7ae4775fa1573aa0f
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    libwebrtc
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_multimedia_libwebrtc/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     GamePlay
     CMAKE_ARGS 

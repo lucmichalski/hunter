@@ -20,6 +20,17 @@ hunter_add_version(
     "aa7524bae51f286a4f2b2c22434c1cbab71ff530"
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    OpenMP
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/openmp/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+) 
+
 hunter_cmake_args(
     OpenMP
     CMAKE_ARGS

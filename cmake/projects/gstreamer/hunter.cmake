@@ -31,6 +31,17 @@ hunter_add_version(
     871fa8b184f91038a5b5875467f25415fa678d05
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    gstreamer
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_multimedia_gstreamer/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_gstreamer_autogen_autotools)
 
 #hunter_cacheable(gstreamer)

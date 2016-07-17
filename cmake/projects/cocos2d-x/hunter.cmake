@@ -45,6 +45,17 @@ hunter_add_version(
     67d4fd859b5e585de0781310804ce002b02687a3
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    cocos2d-x
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_game-engine_cocos2d-x/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_cmake_args(
     cocos2d-x
     CMAKE_ARGS 

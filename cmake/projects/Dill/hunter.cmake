@@ -19,6 +19,17 @@ hunter_add_version(
     62d1b578c99896bc3680da2a001dcede3a084ac7
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Dill
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_concurrency_dill/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_dill_autogen_autotools)
 
 hunter_cacheable(Dill)

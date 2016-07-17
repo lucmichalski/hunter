@@ -21,6 +21,16 @@ hunter_add_version(
     fe2a859e09a02299d222828a9f8a5700091a188c
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Mill
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_concurrency_mill/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
 
 hunter_cmake_args(
     Mill

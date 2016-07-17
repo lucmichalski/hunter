@@ -30,6 +30,17 @@ hunter_add_version(
     0ddcd9086556a30b24f0112949f731a8ea64dd54
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    gst-plugins-base
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_multimedia_gst-plugins-base/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 hunter_pick_scheme(DEFAULT url_sha1_gst-plugins-base_autogen_autotools)
 
 #hunter_cacheable(gst-plugins-base)

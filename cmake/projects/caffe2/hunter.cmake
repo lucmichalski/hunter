@@ -23,6 +23,17 @@ hunter_add_version(
     4b761dacf480b2dafab02f7f50060bc6c9e78dc7
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    caffe2
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_vision-cnn_caffe2/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 # Pick a download scheme
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 

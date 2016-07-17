@@ -34,6 +34,17 @@ hunter_add_version(
     6b8d9a19ca63ab3afa534fc96c3218847ee759b4
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    GoogleCloudVision
+    VERSION
+    develop
+    URL
+    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_vision_google-cloud-vision/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
+
 #hunter_cmake_args(
 #    GoogleCloudVision
 #    CMAKE_ARGS 
