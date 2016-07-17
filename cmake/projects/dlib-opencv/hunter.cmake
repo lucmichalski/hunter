@@ -10,6 +10,10 @@ include(hunter_download)
 include(hunter_pick_scheme)
 include(hunter_configuration_types)
 
+# Dependencies
+hunter_add_package(OpenCV)
+hunter_add_package(dlib)
+
 hunter_add_version(
     PACKAGE_NAME
     dlib-opencv
@@ -33,4 +37,6 @@ hunter_cmake_args(
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(dlib-opencv)
 hunter_download(PACKAGE_NAME dlib-opencv)
-hunter_configuration_types(dlib-opencv CONFIGURATION_TYPES Release)
+#hunter_configuration_types(dlib-opencv CONFIGURATION_TYPES Release)
+hunter_download(PACKAGE_NAME dlib-opencv
+               PACKAGE_DEPENDS_ON OpenCV dlib)

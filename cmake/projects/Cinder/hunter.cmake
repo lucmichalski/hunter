@@ -3,8 +3,15 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
+include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_cmake_args)
+
+## To Do !
+
+# Dependencies
+#hunter_add_package(Boost)
 
 hunter_add_version(
     PACKAGE_NAME
@@ -20,3 +27,7 @@ hunter_add_version(
 
 hunter_pick_scheme(DEFAULT url_sha1_unpack)
 hunter_download(PACKAGE_NAME Cinder)
+
+#hunter_download(PACKAGE_NAME Cinder
+#				PACKAGE_DEPENDS_ON glog Eigen GTest CppNetlib OpenCV Boost CURL curlpp hdf5 Protobuf utfcpp)
+

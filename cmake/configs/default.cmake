@@ -32,6 +32,9 @@ hunter_config(tapkee VERSION 1.0-p0)
 hunter_config(osrm VERSION 5.3.0-rc.3-p0)
 hunter_config(utfcpp VERSION 2.3.4-p0)
 hunter_config(curlpp VERSION 0.7.3-p0)
+hunter_config(inpaint VERSION 0.0.1-p0)
+hunter_config(STXXL VERSION 1.4.1-p0)
+hunter_config(OpenMP VERSION 0.0.1-p0)
 
 # Luc Michalski - Additions
 hunter_config(CocosAR VERSION 0.0.1-p2)
@@ -103,7 +106,7 @@ hunter_config(Thrift VERSION 0.9.3-p0)
 hunter_config(Thrift-Facebook VERSION 0.31.0-p0)
 hunter_config(GPUImage VERSION 0.1.7-m7)
 
-hunter_config(Urho3D VERSION 1.32-m0)
+hunter_config(Urho3D VERSION 1.5-p0)
 hunter_config(openddl-parser VERSION 0.3.0-beta)
 hunter_config(Box2D VERSION 1.0.0-p0)
 hunter_config(poly2tri VERSION 1.0.0)

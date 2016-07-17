@@ -3,8 +3,21 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
+include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_cmake_args)
+
+# Dependencies
+hunter_add_package(Boost)
+hunter_add_package(TBB)
+hunter_add_package(Expat)
+hunter_add_package(ZLIB)
+hunter_add_package(BZip2)
+
+#hunter_add_package(STXXL)
+#hunter_add_package(OpenMP)
+
 
 hunter_add_version(
     PACKAGE_NAME
@@ -18,7 +31,7 @@ hunter_add_version(
 )
 
 hunter_cmake_args(
-    NanoMsg
+    osrm
     CMAKE_ARGS 
     ENABLE_LTO=ON
     SANITIZER=OFF
@@ -33,3 +46,6 @@ hunter_cmake_args(
 
 hunter_pick_scheme(DEFAULT url_sha1_unpack)
 hunter_download(PACKAGE_NAME osrm)
+hunter_download(PACKAGE_NAME osrm
+                PACKAGE_DEPENDS_ON Boost Osmium TBB ZLIB BZip2 OpenMP STXXL Expat)
+

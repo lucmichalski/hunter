@@ -19,7 +19,10 @@ hunter_add_package(CppNetlib)
 hunter_add_package(OpenCV)
 hunter_add_package(Boost)
 hunter_add_package(CURL)
+hunter_add_package(Protobuf)
+hunter_add_package(hdf5)
 hunter_add_package(curlpp)
+hunter_add_package(utfcpp)
 
 # List of versions here...
 hunter_add_version(
@@ -45,4 +48,4 @@ hunter_cmake_args(
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(deepdetect)
 hunter_download(PACKAGE_NAME deepdetect
-				PACKAGE_DEPENDS_ON glog Eigen GTest CppNetlib OpenCV Boost CURL curlpp)
+				PACKAGE_DEPENDS_ON glog Eigen GTest CppNetlib OpenCV Boost CURL curlpp hdf5 Protobuf utfcpp)

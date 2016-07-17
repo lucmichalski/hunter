@@ -11,6 +11,16 @@ include(hunter_cacheable)
 
 hunter_cacheable(caffe)
 
+# Dependencies
+hunter_add_package(glog)
+hunter_add_package(Eigen)
+hunter_add_package(GTest)
+hunter_add_package(OpenCV)
+hunter_add_package(Boost)
+hunter_add_package(CURL)
+hunter_add_package(Protobuf)
+hunter_add_package(hdf5)
+
 # List of versions here...
 hunter_add_version(
     PACKAGE_NAME
@@ -42,8 +52,7 @@ hunter_cmake_args(
 # Pick a download scheme
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 
-# Download package.
-# Two versions of library will be build:
-#     * libexample_A.a
-#     * libexample_Ad.a
-hunter_download(PACKAGE_NAME caffe)
+hunter_download(PACKAGE_NAME caffe
+                PACKAGE_DEPENDS_ON glog Eigen GTest OpenCV Boost CURL hdf5 Protobuf)
+
+
