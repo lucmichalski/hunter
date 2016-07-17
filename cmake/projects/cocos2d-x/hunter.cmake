@@ -18,6 +18,8 @@ hunter_add_package(TIFF) # TIFF
 hunter_add_package(libogg) # libogg
 hunter_add_package(minizip) # minizip
 hunter_add_package(CURL) # Curl
+hunter_add_package(Chipmunk2D) # Chipmunk
+#hunter_add_package(ObjectAL) # ObjectAL
 
 # For hunterization purpose only
 # Be careful with the local tarball approach and the real version of your package
@@ -58,6 +60,6 @@ hunter_cacheable(cocos2d-x)
 hunter_download(
     PACKAGE_NAME cocos2d-x
     # Explicit dependencies since LLVM is not hunterized
-    PACKAGE_DEPENDS_ON Zlib flatbuffers Recast TIFF PNG libogg minizip CURL
+    PACKAGE_DEPENDS_ON Zlib flatbuffers Recast TIFF PNG libogg minizip CURL Chipmunk2D 
 )
 hunter_configuration_types(cocos2d-x CONFIGURATION_TYPES Release)

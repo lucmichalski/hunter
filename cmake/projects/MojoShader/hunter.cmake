@@ -14,9 +14,9 @@ hunter_add_version(
     VERSION
     "1.0.0"
     URL
-    "https://github.com/headupinclouds/PugiXml/archive/v1.0.0.tar.gz"
+    "https://github.com/headupinclouds/MojoShader/archive/v1.0.0.tar.gz"
     SHA1
-    395371581a5d2cdb4bdfcbdcf51871156d54956f
+    120e6a25a7ef5063ef319d1d33af814b55a00a25
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)

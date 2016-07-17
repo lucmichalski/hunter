@@ -3,8 +3,23 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
+include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_cmake_args)
+
+hunter_add_package(PNG)
+hunter_add_package(Poco)
+hunter_add_package(Tess2)
+hunter_add_package(GLEW)
+hunter_add_package(OpenSSL)
+hunter_add_package(Boost)
+hunter_add_package(cairo)
+hunter_add_package(FreeImage)
+hunter_add_package(freetype)
+
+#hunter_add_package(cairo)
+#hunter_add_package(cairo)
 
 hunter_add_version(
     PACKAGE_NAME
@@ -20,3 +35,5 @@ hunter_add_version(
 
 hunter_pick_scheme(DEFAULT url_sha1_unpack)
 hunter_download(PACKAGE_NAME OpenFrameworks)
+#hunter_download(PACKAGE_NAME OpenFrameworks
+#				PACKAGE_DEPENDS_ON PNG Poco Tess2 GLEW OpenSSL Boost cairo FreeImage freetype)

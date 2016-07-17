@@ -16,7 +16,6 @@ hunter_add_package(freetype)
 hunter_add_package(LZ4)
 hunter_add_package(MojoShader)
 hunter_add_package(Mustache)
-
 hunter_add_package(RapidJSON)
 hunter_add_package(Recast)
 hunter_add_package(Detour)
@@ -28,6 +27,10 @@ hunter_add_package(GLEW)
 hunter_add_package(PugiXml)
 hunter_add_package(AngelScript)
 hunter_add_package(kNet)
+hunter_add_package(clipper)
+hunter_add_package(poly2tri)
+hunter_add_package(JO)
+hunter_add_package(STB)
 
 hunter_add_version(
     PACKAGE_NAME
@@ -37,7 +40,7 @@ hunter_add_version(
     URL
     "https://github.com/ConfusedReality/pkg_game-engine_Urho3D/archive/1.5-p0.tar.gz"
     SHA1
-    4d1ba78eff2929397b7c6717be16f3e53bfe378d
+    25ae654a7f416a78d131993aab46be02800b588b
     )
 
 hunter_add_version(
@@ -59,7 +62,5 @@ hunter_cmake_args(
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Urho3D)
-#hunter_download(PACKAGE_NAME Urho3D)
-
-hunter_download(PACKAGE_NAME inpaint
-                PACKAGE_DEPENDS_ON Box2D Bullet Civetweb freetype LZ4 MojoShader Mustache SDL2 Detour Recast RapidJSON StanHull SQLite LibCpuId GLEW PugiXml AngelScript kNet)
+hunter_download(PACKAGE_NAME Urho3D
+                PACKAGE_DEPENDS_ON Box2D Bullet Civetweb freetype LZ4 MojoShader Mustache SDL2 Detour Recast RapidJSON StanHull SQLite LibCpuId GLEW PugiXml AngelScript kNet clipper poly2tri JO STB)
