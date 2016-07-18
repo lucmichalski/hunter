@@ -5,11 +5,32 @@
 
 # Load used modules
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
 
+hunter_add_version(
+    PACKAGE_NAME
+    ccv
+    VERSION
+    "0.7-p9"
+     URL
+     "https://github.com/ConfusedReality/pkg_vision_ccv/archive/0.7-p9.tar.gz"
+     SHA1
+     ac8b6be91a664aa4e49a913123a26032648ac986
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    ccv
+    VERSION
+    "0.7-p8"
+     URL
+     "https://github.com/ConfusedReality/pkg_vision_ccv/archive/0.7-p8.tar.gz"
+     SHA1
+     ab4322f0de17291dfb96fa1c1dd9b9ebf7ea2578
+)
 
 hunter_add_version(
     PACKAGE_NAME
@@ -37,11 +58,11 @@ hunter_add_version(
     PACKAGE_NAME
     ccv
     VERSION
-    develop
+    "develop"
     URL
-    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_vision_ccv/archive/develop.tar.gz"
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_vision_ccv/archive/develop.tar.gz"
     SHA1
-    f8cbbdcbaf758da584de2d2388fd8818c236c682
+    4e07762d4e25e00db1bc694a08d587866e65245a
 )
 
 hunter_cmake_args(
@@ -54,5 +75,5 @@ hunter_cmake_args(
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(ccv)
+#hunter_cacheable(ccv)
 hunter_download(PACKAGE_NAME ccv)

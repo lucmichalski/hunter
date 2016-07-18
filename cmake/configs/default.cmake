@@ -22,41 +22,104 @@
 include(hunter_config)
 include(hunter_user_error)
 
-hunter_config(caffe VERSION 0.0.1-p0)
-hunter_config(caffe2 VERSION 0.0.1-p0)
-hunter_config(deepdetect VERSION 0.0.1-p0)
-hunter_config(deepdetect VERSION 1.0.0-p1)
-hunter_config(XGBoost VERSION 0.40-p0)
-hunter_config(swiftpp VERSION 0.0.1-p0)
-hunter_config(tapkee VERSION 1.0-p0)
-hunter_config(osrm VERSION 5.3.0-rc.3-p0)
-hunter_config(utfcpp VERSION 2.3.4-p0)
-hunter_config(curlpp VERSION 0.7.3-p0)
-hunter_config(inpaint VERSION 0.0.1-p0)
-hunter_config(STXXL VERSION 1.4.1-p0)
-hunter_config(OpenMP VERSION 0.0.1-p0)
-hunter_config(cocos2d-x VERSION 3.12-p0)
-hunter_config(Aruco VERSION 0.0.1-p0)
-
 # Luc Michalski - Additions
-hunter_config(CocosAR VERSION 0.0.1-p2)
-hunter_config(fontconfig VERSION 0.0.1-p0)
-hunter_config(Cordova VERSION 0.0.1-p0)
-hunter_config(Vorbis VERSION 0.0.1-p0)
-hunter_config(webp VERSION 0.5.1-p0)
-hunter_config(gstreamer VERSION 1.9.1-p0)
-hunter_config(gst-plugins-bad VERSION 1.9.1-p0)
-hunter_config(gst-plugins-base VERSION 1.9.1-p0)
-hunter_config(gst-plugins-good VERSION 1.9.1-p0)
-hunter_config(GamePlay VERSION 3.0.0-p2)
-hunter_config(GamePlay-deps VERSION 0.0.2-develop)
-hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
-hunter_config(OpenFace VERSION 0.1-p0)
-hunter_config(CLM VERSION 1.4.0-p0)
-    
+
+#hunter_config(superviseddescent VERSION 0.4.1-p0)
+hunter_config(superviseddescent VERSION develop)
+
+#hunter_config(caffe VERSION 0.0.1-p0)
+hunter_config(caffe VERSION develop)
+
+#hunter_config(caffe2 VERSION 0.0.1-p0)
+hunter_config(caffe2 VERSION develop)
+
+#hunter_config(deepdetect VERSION 0.0.1-p0)
+hunter_config(deepdetect VERSION develop)
+
+#hunter_config(XGBoost VERSION 0.40-p0)
+hunter_config(XGBoost VERSION develop)
+
+#hunter_config(swiftpp VERSION 0.0.1-p0)
+hunter_config(swiftpp VERSION develop)
+
+#hunter_config(tapkee VERSION 1.0-p0)
+hunter_config(tapkee VERSION develop)
+
+#hunter_config(osrm VERSION 5.3.0-rc.3-p0)
+hunter_config(osrm VERSION develop)
+
+#hunter_config(utfcpp VERSION 2.3.4-p0)
+hunter_config(utfcpp VERSION develop)
+
+#hunter_config(curlpp VERSION 0.7.3-p0)
+hunter_config(curlpp VERSION develop)
+
+#hunter_config(inpaint VERSION 0.0.1-p0)
+hunter_config(inpaint VERSION develop)
+
+#hunter_config(STXXL VERSION 1.4.1-p0)
+hunter_config(STXXL VERSION develop)
+
+#hunter_config(OpenMP VERSION 0.0.1-p0)
+hunter_config(OpenMP VERSION develop)
+
+#hunter_config(cocos2d-x VERSION 3.12-p0)
+hunter_config(cocos2d-x VERSION develop)
+
+#hunter_config(Aruco VERSION 0.0.1-p0)
+hunter_config(Aruco VERSION develop)
+
+#hunter_config(CocosAR VERSION 0.0.1-p2)
+hunter_config(CocosAR VERSION develop)
+
+#hunter_config(fontconfig VERSION 0.0.1-p0)
+hunter_config(fontconfig VERSION develop)
+
+#hunter_config(Cordova VERSION 0.0.1-p0)
+hunter_config(Cordova VERSION develop)
+
+#hunter_config(Vorbis VERSION 0.0.1-p0)
+hunter_config(Vorbis VERSION develop)
+
+#hunter_config(webp VERSION 0.5.1-p0)
+hunter_config(webp VERSION develop)
+
+#hunter_config(gstreamer VERSION 1.9.1-p0)
+hunter_config(gstreamer VERSION develop)
+
+#hunter_config(gst-plugins-bad VERSION 1.9.1-p0)
+hunter_config(gst-plugins-bad VERSION develop)
+
+#hunter_config(gst-plugins-base VERSION 1.9.1-p0)
+hunter_config(gst-plugins-base VERSION develop)
+
+#hunter_config(gst-plugins-good VERSION 1.9.1-p0)
+hunter_config(gst-plugins-good VERSION develop)
+
+#hunter_config(GamePlay VERSION 3.0.0-p2)
+hunter_config(GamePlay VERSION develop)
+
+#hunter_config(GamePlay-deps VERSION 0.0.2-develop)
+hunter_config(GamePlay-deps VERSION develop)
+
+#hunter_config(GoogleCloudVision VERSION 0.0.1-p0)
+hunter_config(GoogleCloudVision VERSION develop)
+
+#hunter_config(OpenFace VERSION 0.1-p0)
+hunter_config(OpenFace VERSION develop)
+
+#hunter_config(CLM VERSION 1.4.0-p0)
+hunter_config(CLM VERSION develop)    
+
+#hunter_config(Lepton VERSION 1.0.0-p0)
+hunter_config(Lepton VERSION develop)
+
+#hunter_config(4DFace VERSION 0.1.0-p0)
+hunter_config(4DFace VERSION develop)
+
 hunter_config(Annoy VERSION 0.0.1-p0)    
+
 hunter_config(Golang VERSION 1.6.2)
-hunter_config(Lepton VERSION 1.0.0-p0)
 
 #hunter_config(Annoy VERSION 0.0.1-p0)
 #hunter_config(Annoy VERSION 0.0.1-p0)

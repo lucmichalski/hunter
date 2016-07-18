@@ -39,7 +39,7 @@ hunter_add_version(
     VERSION
     develop
     URL
-    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_game-engine_cryengine/archive/develop.tar.gz"
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_game-engine_cryengine/archive/develop.tar.gz"
     SHA1
     f8cbbdcbaf758da584de2d2388fd8818c236c682
 )

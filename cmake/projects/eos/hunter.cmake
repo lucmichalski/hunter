@@ -11,7 +11,7 @@ include(hunter_pick_scheme)
 
 hunter_add_package(OpenCV) # OpenCV
 hunter_add_package(Boost) # Boost
-hunter_add_package(Eigen3) # Boost
+hunter_add_package(Eigen) # Boost
 hunter_add_package(cereal) # cereal
 
 hunter_add_version(
@@ -19,10 +19,10 @@ hunter_add_version(
     eos
     VERSION
     "0.7.0-p1"
-    URLa
+    URL
     "https://github.com/ConfusedReality/pkg_face-reconstruction_eos/archive/v0.7.0-p1.tar.gz"
     SHA1
-    b34e7a087513b579368927642e576722cbe067e8
+    1dad8d1a66ff6dc2b1cc7c7eefee8b20bd3ba321
     )
 
 hunter_add_version(
@@ -31,9 +31,9 @@ hunter_add_version(
     VERSION
     develop
     URL
-    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_face-reconstruction_eos/archive/develop.tar.gz"
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_face-reconstruction_eos/archive/develop.tar.gz"
     SHA1
-    f8cbbdcbaf758da584de2d2388fd8818c236c682
+    af8acdf7abf9a53d1a575daccbbfeb8eae2bc5d7
 )
 
 hunter_cmake_args(
@@ -41,11 +41,6 @@ hunter_cmake_args(
     CMAKE_ARGS 
 	BUILD_EXAMPLES=OFF
     BUILD_DOCUMENTATION=OFF
-	BUILD_UTILS=OFF
-    BUILD_GLSAMPLES=OFF
-    INSTALL_DOC=OFF
-    WARNINGS_ARE_ERRORS=OFF
-    WHOLE_PROGRAM_OPTIMIZATION=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
@@ -55,5 +50,5 @@ hunter_cacheable(eos)
 hunter_download(
     PACKAGE_NAME eos
     # Explicit dependencies since LLVM is not hunterized
-    PACKAGE_DEPENDS_ON OpenCV Boost Eigen3 cereal
+    PACKAGE_DEPENDS_ON OpenCV Boost Eigen cereal
 )

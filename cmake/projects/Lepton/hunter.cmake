@@ -27,12 +27,15 @@ hunter_add_version(
     VERSION
     develop
     URL
-    "file://Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/pkg_compression_lepton/archive/develop.tar.gz"
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_compression_lepton/archive/develop.tar.gz"
     SHA1
-    f8cbbdcbaf758da584de2d2388fd8818c236c682
+    8f503c05140da3e530ec8e36a62fe0415681129a
 )
 
-hunter_pick_scheme(DEFAULT url_sha1_cmake)
+#hunter_pick_scheme(DEFAULT url_sha1_cmake)
+
+hunter_pick_scheme(DEFAULT url_sha1_autogen_autotools)
+
 #hunter_cacheable(Lepton)
 #hunter_download(PACKAGE_NAME Lepton)
 hunter_download(PACKAGE_NAME Lepton
