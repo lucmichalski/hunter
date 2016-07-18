@@ -1,4 +1,4 @@
-# Copyright (c) 2015, David Hirvonen
+# Copyright (c) 2015, David Hirvonen, Luc Michalski
 # All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
@@ -22,6 +22,28 @@ hunter_add_version(
     PACKAGE_NAME
     CURL
     VERSION
+    "7.49.1-v3"
+    URL
+    "https://github.com/hunter-packages/curl/archive/hunter-7.49.1-v3.tar.gz"
+    SHA1
+    9905952494867076fd136a7ee9fce482d80c451c
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    CURL
+    VERSION
+    "7.49.1-p6"
+    URL
+    "https://github.com/ConfusedReality/pkg_network_curl/archive/v7.49.1-p6.tar.gz"
+    SHA1
+    fd72a153ca60fe85b57a2ac4eadedcfb38c3066d
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    CURL
+    VERSION
     "7.49.1-DEV"
     URL
     "https://github.com/hunter-packages/curl/archive/hunter-7.49.1-v0.zip"
@@ -29,6 +51,16 @@ hunter_add_version(
     fd72a153ca60fe85b57a2ac4eadedcfb38c3066d
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    cocos2d-x
+    VERSION
+    develop
+    URL
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_game-engine_cocos2d-x/archive/develop.tar.gz"
+    SHA1
+    f8cbbdcbaf758da584de2d2388fd8818c236c682
+)
 
 if(BUILD_SHARED_LIBS)
     SET(BUILD_CURL_STATIC OFF)

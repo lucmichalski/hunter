@@ -12,7 +12,7 @@ include(hunter_configuration_types)
 
 hunter_add_version(
     PACKAGE_NAME
-    NanoMsg
+    nanomsg
     VERSION
     "1.0.0-p6"
     URL
@@ -23,7 +23,7 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME
-    NanoMsg
+    nanomsg
     VERSION
     "1.0.0-m1"
     URL
@@ -34,7 +34,7 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME
-    NanoMsg
+    nanomsg
     VERSION
     "1.0.0"
     URL
@@ -43,8 +43,19 @@ hunter_add_version(
     57f90778a9bb7b95a7fd73910fd41894f3ee9cab
     )
 
+hunter_add_version(
+    PACKAGE_NAME
+    nanomsg
+    VERSION
+    "develop"
+    URL
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_messaging_nanomsg/archive/develop.tar.gz"
+    SHA1
+    fc15120053bf5cb223ca6ff32a451252d71426c9
+)
+
 hunter_cmake_args(
-    NanoMsg
+    nanomsg
     CMAKE_ARGS 
     NN_STATIC_LIB=ON
     NN_SHARED_LIB=OFF
@@ -56,6 +67,6 @@ hunter_cmake_args(
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(NanoMsg)
-hunter_download(PACKAGE_NAME NanoMsg)
-hunter_configuration_types(NanoMsg CONFIGURATION_TYPES Release)
+hunter_cacheable(nanomsg)
+hunter_download(PACKAGE_NAME nanomsg)
+hunter_configuration_types(nanomsg CONFIGURATION_TYPES Release)

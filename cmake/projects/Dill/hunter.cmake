@@ -1,4 +1,4 @@
-# Copyright (c) 2016, Luc Michalski
+# Copyright (c) 2016, Ruslan Baratov, Luc Michalski
 # All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
@@ -23,15 +23,14 @@ hunter_add_version(
     PACKAGE_NAME
     Dill
     VERSION
-    develop
+    "develop"
     URL
     "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_concurrency_dill/archive/develop.tar.gz"
     SHA1
-    f8cbbdcbaf758da584de2d2388fd8818c236c682
+    5a86fd89e4fca43f80da18b1c1a904f0a8c26322
 )
 
-hunter_pick_scheme(DEFAULT url_sha1_dill_autogen_autotools)
-
+hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Dill)
 hunter_download(
     PACKAGE_NAME Dill

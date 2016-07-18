@@ -24,6 +24,9 @@ include(hunter_user_error)
 
 # Luc Michalski - Additions
 
+hunter_config(turbojpeg VERSION develop)
+hunter_config(leptonica VERSION 1.73)
+
 #hunter_config(superviseddescent VERSION 0.4.1-p0)
 hunter_config(superviseddescent VERSION develop)
 
@@ -37,7 +40,7 @@ hunter_config(caffe2 VERSION develop)
 hunter_config(deepdetect VERSION develop)
 
 #hunter_config(XGBoost VERSION 0.40-p0)
-hunter_config(XGBoost VERSION develop)
+#hunter_config(XGBoost VERSION develop)
 
 #hunter_config(swiftpp VERSION 0.0.1-p0)
 hunter_config(swiftpp VERSION develop)
@@ -150,13 +153,8 @@ hunter_config(mpg123 VERSION 1.23.6)
 hunter_config(Tess2 VERSION 1.0.2)
 hunter_config(Poco VERSION poco-1.7.3-p3)
 hunter_config(dlib-opencv VERSION 1.1-nonfree-p6)
-hunter_config(NanoMsg VERSION 1.0.0-p6)
-hunter_config(Mill VERSION 1.13-p9)
-hunter_config(Dill VERSION 0.5-beta-p0)
 hunter_config(FindObject VERSION 0.6.3-p16)
-hunter_config(turbojpeg VERSION 1.5.0-p2)
-hunter_config(wsock VERSION 1.0.0-p0)
-hunter_config(DillSocks VERSION 0.0.1-p0)
+
 
 hunter_config(ogles_gpgpu VERSION 1.0.0-p1)
 
@@ -204,7 +202,6 @@ hunter_config(LZ4 VERSION 1.0.0-p2)
 
 # To do
 hunter_config(Thrift-Asio VERSION 0.9.3-m0)
-hunter_config(DillSocks VERSION 0.1-p0)
 hunter_config(ARToolKit5 VERSION 5.3.2R1-p0)
 
 # NOTE: no names with spaces!
@@ -287,12 +284,12 @@ hunter_config(WinSparkle VERSION 0.4.0)
 hunter_config(ZLIB VERSION 1.2.8-p3)
 hunter_config(ZMQPP VERSION 4.1.2)
 hunter_config(ZeroMQ VERSION 4.1.4-p2)
-hunter_config(ccv VERSION 0.7-p8)
+hunter_config(ccv VERSION 0.7-p10)
 hunter_config(cereal VERSION 1.1.2-p5)
 hunter_config(clBLAS VERSION 2.10.0-p0)
 hunter_config(convertutf VERSION 1.0.1)
 hunter_config(clipper VERSION 22.0.0-p0)
-hunter_config(CURL VERSION 7.49.1-DEV)
+hunter_config(CURL VERSION 7.49.1-v3)
 
 hunter_config(cvmatio VERSION 1.0.26)
 hunter_config(damageproto VERSION 1.2.1)
@@ -361,6 +358,15 @@ hunter_config(xproto VERSION 7.0.23)
 hunter_config(xrender VERSION 0.9.7)
 hunter_config(xshmfence VERSION 1.2)
 hunter_config(xtrans VERSION 1.2.7)
+
+hunter_config(wsock VERSION develop)
+hunter_config(DillSocks VERSION develop)
+hunter_config(Dill VERSION develop)
+hunter_config(Mill VERSION develop3)
+hunter_config(NNMill VERSION develop2)
+hunter_config(nanomsg VERSION develop)
+hunter_config(xgboost VERSION 0.40-p0)
+hunter_config(caffe-beniz VERSION develop)
 
 if(MINGW OR MSVC80)
   hunter_config(GTest VERSION 1.7.0-hunter-6)

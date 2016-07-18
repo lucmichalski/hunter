@@ -4,7 +4,7 @@
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
 include(hunter_add_version)
-include(hunter_cacheable)
+#include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
 
@@ -19,10 +19,22 @@ hunter_add_version(
     62d1b578c99896bc3680da2a001dcede3a084ac7
     )
 
-#hunter_pick_scheme(DEFAULT url_sha1_autotools)
-hunter_pick_scheme(DEFAULT url_sha1_wsock_autogen_autotools)
+hunter_add_version(
+    PACKAGE_NAME
+    wsock
+    VERSION
+    "develop"
+    URL
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_websocket_wsock/archive/develop.tar.gz"
+    SHA1
+    b47626927976ec2179db281e11297069555a13eb
+)
 
-hunter_cacheable(wsock)
+#hunter_pick_scheme(DEFAULT url_sha1_autotools)
+hunter_pick_scheme(DEFAULT url_sha1_cmake)
+#hunter_pick_scheme(DEFAULT url_sha1_wsock_autogen_autotools)
+#hunter_cacheable(wsock)
+
 hunter_download(
     PACKAGE_NAME wsock
 )

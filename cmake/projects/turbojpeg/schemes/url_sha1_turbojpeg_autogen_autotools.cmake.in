@@ -57,8 +57,6 @@ hunter_autotools_project("@HUNTER_EP_NAME@"
       "@HUNTER_INSTALL_PREFIX@"
     PARALLEL_JOBS
       "@HUNTER_JOBS_OPTION@"
-    CCASFLAGS
-      "-no-integrated-as"
     CPPFLAGS
       "-mfloat-abi=softfp -isysroot -I@HUNTER_INSTALL_PREFIX@/include" # find Expat
     LDFLAGS

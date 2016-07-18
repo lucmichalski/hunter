@@ -25,11 +25,11 @@ hunter_add_version(
     PACKAGE_NAME
     Mill
     VERSION
-    develop
+    develop3
     URL
     "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_concurrency_mill/archive/develop.tar.gz"
     SHA1
-    f8cbbdcbaf758da584de2d2388fd8818c236c682
+    149644abb96cd660742e973a4976b6c9b5dc6d05
 )
 
 hunter_cmake_args(
@@ -45,3 +45,5 @@ hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Mill)
 hunter_download(PACKAGE_NAME Mill)
 hunter_configuration_types(Mill CONFIGURATION_TYPES Release)
+
+

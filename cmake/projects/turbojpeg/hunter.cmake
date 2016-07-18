@@ -7,6 +7,19 @@ include(hunter_add_version)
 #include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_cmake_args)
+
+hunter_add_version(
+    PACKAGE_NAME
+    turbojpeg
+    VERSION
+    develop
+    URL
+    "file:///Volumes/HardDrive/go/src/github.com/lucmichalski/wormz/shared/git/packages/pkg_images_libjpeg-turbo/archive/develop.tar.gz"
+    SHA1
+    3ba7bdb273d23cb609086b8576948ae6e9ead026
+)  
+
 
 hunter_add_version(
     PACKAGE_NAME
@@ -19,6 +32,7 @@ hunter_add_version(
     4eee74a69e5849ea0180e615afb2fbd9462040a2
     )
 
+#hunter_pick_scheme(DEFAULT url_sha1_cmake)
 #hunter_pick_scheme(DEFAULT url_sha1_autotools)
 hunter_pick_scheme(DEFAULT url_sha1_turbojpeg_autogen_autotools)
 

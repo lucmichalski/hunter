@@ -1,4 +1,5 @@
-# Added by Luc Michalski - 2016
+# Copyright (c) 2016, Ruslan Baratov, Luc Michalski
+# All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 

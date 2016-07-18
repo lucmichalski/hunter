@@ -1,4 +1,4 @@
-# Copyright (c) 2013-2014, Ruslan Baratov
+# Copyright (c) 2013-2014, Ruslan Baratov, Luc Michalski
 # All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
